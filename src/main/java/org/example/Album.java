@@ -1,29 +1,36 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.UUID;
+
 
 /**
  * Represents an album with information such as name, type, artist, and a list of tracks.
  */
-public class Album {
+public class Album implements Identifier {
+
+    private String albumId;
     private String name;
-    private String type;
+    protected AlbumType type;
     private Artist artist;
-    private List<MusicTrack> tracks;
+    protected List<MusicTrack> tracks;
 
     /**
      * Constructs an album with the given name, type, and artist.
      *
-     * @param name   The name of the album.
-     * @param type   The type or genre of the album.
-     * @param artist The artist who released the album.
      */
-    public Album(String name, String type, Artist artist) {
+    public Album(String name) {
+        this.albumId = generateUniqueId();
         this.name = name;
-        this.type = type;
-        this.artist = artist;
+        this.type = AlbumType.COMMON_ALBUM;
+        this.artist = null;
         this.tracks = new ArrayList<>();
+    }
+
+    public String getAlbumId() {
+        return albumId;
     }
 
     /**
@@ -40,16 +47,18 @@ public class Album {
     }
 
     /**
-     * Gets the overall running time of the album in minutes.
+     * Gets the overall time of the album in Seconds.
      *
-     * @return The total running time of the album.
+     * @return The total time of the album.
      */
-    public double getOverallRunningTime() {
-        double totalRunningTime = 0.0;
+    public int getTotalTimeOfTracks() {
+        int totalTimeOfTracks = 0;
+
         for (MusicTrack track : tracks) {
-            totalRunningTime += track.getPlayingTime();
+            totalTimeOfTracks += track.getLengthInSeconds();
         }
-        return totalRunningTime;
+
+        return totalTimeOfTracks;
     }
 
     /**
@@ -57,10 +66,10 @@ public class Album {
      *
      * @return The total file size of the album.
      */
-    public long getOverallFileSize() {
+    public long getTotalFileSize() {
         long totalFileSize = 0;
         for (MusicTrack track : tracks) {
-            totalFileSize += track.getSize();
+            totalFileSize += track.getFileSizeInBytes();
         }
         return totalFileSize;
     }
@@ -72,7 +81,7 @@ public class Album {
      */
     public double getAverageRating() {
         if (tracks.isEmpty()) {
-            return 0.0; // Avoid division by zero if there are no tracks.
+            return 0.0;
         }
 
         double totalRating = 0.0;
@@ -83,10 +92,20 @@ public class Album {
         return totalRating / tracks.size();
     }
 
-    // Add getters and setters for name, type, artist, and tracks
+    public void sortTracksByName() {
+        Collections.sort(tracks);
+    }
 
     @Override
     public String toString() {
         return "Album: " + name + ", Type: " + type + ", Artist: " + artist.getName();
+    }
+
+    @Override
+    public String generateUniqueId() {
+        String timestamp = Long.toString(System.currentTimeMillis());
+        String randomUUID = UUID.randomUUID().toString();
+
+        return "album-" + timestamp + "-" + randomUUID;
     }
 }

@@ -9,6 +9,7 @@ import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Random;
 
+
 public class TracksTest {
 
     public static void main(String[] args) {
@@ -33,10 +34,10 @@ public class TracksTest {
                 System.out.println("Title: " + musicTrack.getTitle());
                 System.out.println("Artist: " + musicTrack.getArtist());
                 System.out.println("Date: " + musicTrack.getDate());
-                System.out.println("Length: " + musicTrack.getPlayingTime());
+                System.out.println("Length: " + musicTrack.getLengthInSeconds());
                 System.out.println("Rating: " + musicTrack.getRating());
                 System.out.println("Location: " + musicTrack.getLocation());
-                System.out.println("Size: " + musicTrack.getSize());
+                System.out.println("Size: " + musicTrack.getFileSizeInBytes());
                 System.out.println("Play Count: " + musicTrack.getPlayCount());
                 System.out.println();
             }
@@ -47,7 +48,7 @@ public class TracksTest {
 
     public static MusicTrack generateAMusicTrack(Artist artist ) {
         String title = generateRandomTitle();
-        double playingTime = generateRandomPlayingTime();
+        int playingTime = generateRandomPlayingTime();
         int rating = new Random().nextInt(6);
         String location = generateRandomLocation();
         long size = generateRandomSize();
@@ -55,18 +56,18 @@ public class TracksTest {
 
         MusicTrack musicTrack = new MusicTrack(title);
         musicTrack.setArtist(artist);
-        musicTrack.setPlayingTime(playingTime);
+        musicTrack.setLengthInSeconds(playingTime);
         musicTrack.setRating(rating);
         musicTrack.setLocation(location);
-        musicTrack.setSize(size);
+        musicTrack.setFileSizeInBytes(size);
         musicTrack.setPlayCount(playCount);
 
         return musicTrack;
     }
 
 
-    public static double generateRandomPlayingTime() {
-        return new Random().nextDouble() * 100;
+    public static int generateRandomPlayingTime() {
+        return new Random().nextInt() * 100;
     }
 
     public static long generateRandomSize() {
@@ -81,7 +82,7 @@ public class TracksTest {
     }
 
     public static String generateRandomLocation() {
-        final String[] LOCATIONS = {"USA", "UK", "China", "Japan", "Korea", "France", "Germany", "Italy", "Spain", "Russia"};
+        final String[] LOCATIONS = {"pathA", "pathB"};
 
         return LOCATIONS[new Random().nextInt(LOCATIONS.length)];
     }

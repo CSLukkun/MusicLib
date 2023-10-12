@@ -1,18 +1,20 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-public class MusicTrack {
+public class MusicTrack implements Comparable<MusicTrack>,Identifier {
     private String trackId;
     private String title;
     private Artist artist;
-    private int date;
-    private double playingTime;
+    private Date date;
+
+    private int lengthInSeconds;
     private int rating;
     private String location;
-    private long size;
+    private long fileSizeInBytes;
     private List<Artist> guestArtists;
     private int playCount;
 
@@ -25,31 +27,25 @@ public class MusicTrack {
      * @param artist The primary artist who performed the track.
      */
     public MusicTrack(String title) {
-        this.trackId = generateTrackId();
+        this.trackId = generateUniqueId();
         this.title = title;
-        this.date = 0;
-        this.playingTime = 0.0;
+        this.date = null;
+        this.lengthInSeconds = 0;
         this.rating = 0;
         this.location = "";
-        this.size = 0L;
+        this.fileSizeInBytes = 0L;
         this.guestArtists = new ArrayList<>();
         this.playCount = 0;
         this.artist = null;
     }
 
-    public String generateTrackId() {
-        String timestamp = Long.toString(System.currentTimeMillis());
-        String randomUUID = UUID.randomUUID().toString();
-
-        return timestamp + "-" + randomUUID;
-    }
 
     /**
      * Sets the release date of the track.
      *
      * @param date The release date of the track.
      */
-    public void setDate(int date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -58,7 +54,7 @@ public class MusicTrack {
      *
      * @return The release date of the track.
      */
-    public int getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -103,13 +99,6 @@ public class MusicTrack {
         return playCount;
     }
 
-    public double getPlayingTime() {
-        return playingTime;
-    }
-
-    public long getSize() {
-        return size;
-    }
 
     public int getRating() {
         return rating;
@@ -119,13 +108,6 @@ public class MusicTrack {
         this.rating = rating;
     }
 
-    public void setPlayingTime(double playingTime) {
-        this.playingTime = playingTime;
-    }
-
-    public void setSize(long size) {
-        this.size = size;
-    }
 
     public String getTitle() {
         return title;
@@ -172,5 +154,38 @@ public class MusicTrack {
 
     public void setPlayCount(int playCount) {
         this.playCount = playCount;
+    }
+
+    public long getFileSizeInBytes() {
+        return fileSizeInBytes;
+    }
+
+    public void setFileSizeInBytes(long fileSizeInBytes) {
+        this.fileSizeInBytes = fileSizeInBytes;
+    }
+
+    public int getLengthInSeconds() {
+        return lengthInSeconds;
+    }
+
+    public void setLengthInSeconds(int lengthInSeconds) {
+        this.lengthInSeconds = lengthInSeconds;
+    }
+
+    public String getTrackId() {
+        return trackId;
+    }
+
+    @Override
+    public int compareTo(MusicTrack o) {
+        return this.title.compareTo(o.title);
+    }
+
+    @Override
+    public String generateUniqueId() {
+        String timestamp = Long.toString(System.currentTimeMillis());
+        String randomUUID = UUID.randomUUID().toString();
+
+        return "track-" + timestamp + "-" + randomUUID;
     }
 }

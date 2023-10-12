@@ -2,11 +2,13 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Represents a music library that stores tracks and albums.
  */
-public class MusicLibrary {
+public class MusicLibrary implements Identifier {
+    private String libId;
     private List<MusicTrack> tracks;
     private List<Album> albums;
 
@@ -14,6 +16,7 @@ public class MusicLibrary {
      * Constructs a music library with empty lists of tracks and albums.
      */
     public MusicLibrary() {
+        this.libId = generateUniqueId();
         this.tracks = new ArrayList<>();
         this.albums = new ArrayList<>();
     }
@@ -61,5 +64,13 @@ public class MusicLibrary {
         }
 
         return lowestRatedTracks;
+    }
+
+    @Override
+    public String generateUniqueId() {
+        String timestamp = Long.toString(System.currentTimeMillis());
+        String randomUUID = UUID.randomUUID().toString();
+
+        return "lib-" + timestamp + "-" + randomUUID;
     }
 }

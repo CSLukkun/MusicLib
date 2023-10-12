@@ -4,8 +4,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.example.Album;
+import org.example.AlbumType;
 import org.example.Artist;
-import org.example.ArtistTest;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class AlbumTest {
 
                 // Extract album properties from JSON
                 String albumName = albumObject.get("name").getAsString();
-                String albumType = albumObject.get("type").getAsString();
+                AlbumType albumType = AlbumType.valueOf(albumObject.get("type").getAsString());
                 JsonObject artistObject = albumObject.get("artist").getAsJsonObject();
 
                 // Extract artist properties from JSON
@@ -45,7 +45,7 @@ public class AlbumTest {
                 Artist artist = new Artist(artistName);
 
                 // Create an Album object and add it to the list
-                Album album = new Album(albumName, albumType, artist);
+                Album album = new Album(albumName);
                 albums.add(album);
             }
 
@@ -61,10 +61,10 @@ public class AlbumTest {
 
     public static Album generateAnAlbum() {
         String albumName = generateRandomAlbumName();
-        String albumType = generateRandomAlbumType();
+        AlbumType albumType = AlbumType.valueOf(generateRandomAlbumType());
         Artist artist = ArtistTest.generatAnArtist();
 
-        Album album = new Album(albumName, albumType, artist);
+        Album album = new Album(albumName);
         int trackNum = new Random().nextInt(10) + 5;
         for (int i = 0; i < trackNum; i++) {
             album.addTrack(TracksTest.generateAMusicTrack(artist));
@@ -76,8 +76,9 @@ public class AlbumTest {
 
     public static String generateRandomAlbumType() {
         final String[] albumTypes = {
-                "Pop", "Rock", "Jazz", "Hip-Hop", "Classical", "Electronic",
-                "Country", "R&B", "Reggae", "Blues", "Folk", "Metal"
+                "FULL_ALBUM",
+                "MINI_ALBUM",
+                "COMPILATION_ALBUM"
         };
         Random random = new Random();
         int randomIndex = random.nextInt(albumTypes.length);

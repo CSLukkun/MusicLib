@@ -2,13 +2,14 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Represents an artist, including their name and membership to bands if appropriate.
  */
-public class Artist {
-    private String name;
-    private List<String> bandsIn;
+public class Artist implements Identifier {
+    protected String artistId;
+    protected String name;
 
     /**
      * Constructs an artist with the given name.
@@ -16,28 +17,9 @@ public class Artist {
      * @param name The name of the artist.
      */
     public Artist(String name) {
-
-
+        this.artistId = generateUniqueId();
         this.name = name;
-        this.bandsIn = new ArrayList<String>();
-    }
 
-    /**
-     * Adds a band to the list of bands the artist is a part of.
-     *
-     * @param bandName The name of the band to be added.
-     */
-    public void addBand(String bandName) {
-        bandsIn.add(bandName);
-    }
-
-    /**
-     * Removes a band from the list of bands the artist is a part of.
-     *
-     * @param bandName The name of the band to be removed.
-     */
-    public void removeBand(String bandName) {
-        bandsIn.remove(bandName);
     }
 
     /**
@@ -50,15 +32,6 @@ public class Artist {
     }
 
     /**
-     * Gets the list of bands the artist is a part of.
-     *
-     * @return The list of band names.
-     */
-    public List<String> getBandsIn() {
-        return bandsIn;
-    }
-
-    /**
      * Returns a formatted string representation of the artist's information.
      *
      * @return A formatted string representing the artist and their bands.
@@ -66,15 +39,14 @@ public class Artist {
     @Override
     public String toString() {
         StringBuilder artistInfo = new StringBuilder("Artist: " + name);
-
-        if (!bandsIn.isEmpty()) {
-            artistInfo.append(", Bands: ");
-            for (String band : bandsIn) {
-                artistInfo.append(band).append(", ");
-            }
-            artistInfo.setLength(artistInfo.length() - 2);
-        }
-
         return artistInfo.toString();
+    }
+
+    @Override
+    public String generateUniqueId() {
+        String timestamp = Long.toString(System.currentTimeMillis());
+        String randomUUID = UUID.randomUUID().toString();
+
+        return "artist-" + timestamp + "-" + randomUUID;
     }
 }
