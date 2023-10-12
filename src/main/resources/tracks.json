@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Track 1",
+    "artist": {
+      "name": "John Smith",
+      "bandsIn": ["Band A"]
+    },
+    "date": 1995,
+    "length": 4.15,
+    "rating": 4,
+    "location": "path/to/track_1.mp3",
+    "size": 567890,
+    "playCount": 150,
+    "album": "Album A"
+  },
+  {
+    "title": "Track 2",
+    "artist": {
+      "name": "Alice Johnson",
+      "bandsIn": ["Band B"]
+    },
+    "date": 2002,
+    "length": 3.50,
+    "rating": 3,
+    "location": "path/to/track_2.mp3",
+    "size": 432100,
+    "playCount": 75,
+    "album": "Album B"
+  },
+  {
+    "title": "Track 3",
+    "artist": {
+      "name": "Michael Brown",
+      "bandsIn": ["Band X"]
+    },
+    "date": 1988,
+    "length": 5.30,
+    "rating": 5,
+    "location": "path/to/track_3.mp3",
+    "size": 765432,
+    "playCount": 200,
+    "album": "Album C"
+  },
+  {
+    "title": "Track 4",
+    "date": 1999,
+    "length": 4.00,
+    "rating": 4,
+    "location": "path/to/track_4.mp3",
+    "size": 654321,
+    "playCount": 120,
+    "album": "Album D"
+  },
+  {
+    "title": "Track 5",
+    "artist": {
+      "name": "David Lee",
+      "bandsIn": ["Band C"]
+    },
+    "date": 2005,
+    "length": 3.25,
+    "rating": 3,
+    "location": "path/to/track_5.mp3",
+    "size": 987654,
+    "playCount": 90,
+    "album": "Album E"
+  }
+]

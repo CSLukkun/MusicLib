@@ -1,0 +1,82 @@
+[
+  {
+    "name": "John Smith",
+    "bandsIn": ["Band A", "Band B"]
+  },
+  {
+    "name": "Alice Johnson",
+    "bandsIn": ["Band X", "Band Y"]
+  },
+  {
+    "name": "Michael Brown",
+    "bandsIn": ["Band C"]
+  },
+  {
+    "name": "Emily White",
+    "bandsIn": ["Band Z", "Band W"]
+  },
+  {
+    "name": "David Lee",
+    "bandsIn": ["Band D"]
+  },
+  {
+    "name": "Sarah Davis",
+    "bandsIn": ["Band Y"]
+  },
+  {
+    "name": "Robert Jones",
+    "bandsIn": ["Band E", "Band F"]
+  },
+  {
+    "name": "Linda Miller",
+    "bandsIn": ["Band G"]
+  },
+  {
+    "name": "James Wilson",
+    "bandsIn": ["Band H", "Band I"]
+  },
+  {
+    "name": "Jennifer Adams",
+    "bandsIn": ["Band J"]
+  },
+  {
+    "name": "Daniel Moore",
+    "bandsIn": ["Band K", "Band L"]
+  },
+  {
+    "name": "Karen Clark",
+    "bandsIn": ["Band M"]
+  },
+  {
+    "name": "William Taylor",
+    "bandsIn": ["Band N", "Band O"]
+  },
+  {
+    "name": "Catherine Walker",
+    "bandsIn": ["Band P"]
+  },
+  {
+    "name": "Thomas Lewis",
+    "bandsIn": ["Band Q", "Band R"]
+  },
+  {
+    "name": "Rebecca Hall",
+    "bandsIn": ["Band S"]
+  },
+  {
+    "name": "Matthew Turner",
+    "bandsIn": ["Band T", "Band U"]
+  },
+  {
+    "name": "Elizabeth King",
+    "bandsIn": ["Band V"]
+  },
+  {
+    "name": "Andrew Brown",
+    "bandsIn": ["Band W", "Band X"]
+  },
+  {
+    "name": "Jessica White",
+    "bandsIn": ["Band Y"]
+  }
+]

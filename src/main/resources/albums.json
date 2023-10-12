@@ -1,0 +1,116 @@
+[
+  {
+    "name": "A Night at the Opera",
+    "type": "Rock",
+    "artist": {
+      "name": "Queen",
+      "bandsIn": []
+    },
+    "tracks": [
+      {
+        "title": "Bohemian Rhapsody",
+        "artist": {
+          "name": "Queen",
+          "bandsIn": []
+        },
+        "date": 1975,
+        "length": 6.07,
+        "rating": 5,
+        "location": "path/to/bohemian_rhapsody.mp3",
+        "size": 1234567,
+        "playCount": 100,
+        "album": "A Night at the Opera"
+      },
+      {
+        "title": "Love of My Life",
+        "artist": {
+          "name": "Queen",
+          "bandsIn": []
+        },
+        "date": 1975,
+        "length": 3.38,
+        "rating": 4,
+        "location": "path/to/love_of_my_life.mp3",
+        "size": 987654,
+        "playCount": 90,
+        "album": "A Night at the Opera"
+      }
+    ]
+  },
+  {
+    "name": "Dark Side of the Moon",
+    "type": "Progressive Rock",
+    "artist": {
+      "name": "Pink Floyd",
+      "bandsIn": []
+    },
+    "tracks": [
+      {
+        "title": "Speak to Me",
+        "artist": {
+          "name": "Pink Floyd",
+          "bandsIn": []
+        },
+        "date": 1973,
+        "length": 1.30,
+        "rating": 5,
+        "location": "path/to/speak_to_me.mp3",
+        "size": 543210,
+        "playCount": 120,
+        "album": "Dark Side of the Moon"
+      },
+      {
+        "title": "Time",
+        "artist": {
+          "name": "Pink Floyd",
+          "bandsIn": []
+        },
+        "date": 1973,
+        "length": 6.53,
+        "rating": 4,
+        "location": "path/to/time.mp3",
+        "size": 987654,
+        "playCount": 85,
+        "album": "Dark Side of the Moon"
+      }
+    ]
+  },
+  {
+    "name": "Revolver",
+    "type": "Rock",
+    "artist": {
+      "name": "The Beatles",
+      "bandsIn": []
+    },
+    "tracks": [
+      {
+        "title": "Eleanor Rigby",
+        "artist": {
+          "name": "The Beatles",
+          "bandsIn": []
+        },
+        "date": 1966,
+        "length": 2.06,
+        "rating": 5,
+        "location": "path/to/eleanor_rigby.mp3",
+        "size": 345678,
+        "playCount": 150,
+        "album": "Revolver"
+      },
+      {
+        "title": "Yellow Submarine",
+        "artist": {
+          "name": "The Beatles",
+          "bandsIn": []
+        },
+        "date": 1966,
+        "length": 2.38,
+        "rating": 4,
+        "location": "path/to/yellow_submarine.mp3",
+        "size": 456789,
+        "playCount": 110,
+        "album": "Revolver"
+      }
+    ]
+  }
+]
