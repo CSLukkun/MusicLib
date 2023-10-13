@@ -5,20 +5,19 @@ import org.example.Artist;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.Random;
 
 
 public class ArtistTest {
     public static void main(String[] args) {
-        System.out.println(
-                generatAnArtist("soloist")
-        );
+//        generatAnArtist("soloist");
+        generateArtistsFromJson();
 
     }
 
-    public static void generateArtistsFromJson() {
+    public static ArrayList<Artist> generateArtistsFromJson() {
         String jsonFilePath = "src/main/resources/artists.json";
 
         try (FileReader reader = new FileReader(jsonFilePath)) {
@@ -32,22 +31,21 @@ public class ArtistTest {
             List<Artist> artists = gson.fromJson(reader, artistListType);
 
             // Print artist information
-            for (Artist artist : artists) {
-                System.out.println(artist);
-            }
+            return (ArrayList<Artist>) artists;
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        return null;
     }
 
     public static Artist generatAnArtist(String type)  {
         if (Objects.equals(type, "soloist")) {
             return SoloistTest.generateAnSoloist();
         } else {
-            return BandTest.generateBand();
+            return BandTest.generateABand();
         }
     }
-
 
     public static Artist generatAnArtist() {
         return SoloistTest.generateAnSoloist();

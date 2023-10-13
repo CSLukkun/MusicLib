@@ -14,6 +14,9 @@ public class Band extends Artist {
     public void addMember(Artist member) {
         members.add(member);
     }
+    public void removeMember(Artist artist) {
+        members.remove(artist);
+    }
 
     public List<Artist> getMembers() {
         return members;
@@ -21,7 +24,17 @@ public class Band extends Artist {
 
     @Override
     public String toString() {
-        StringBuilder artistInfo = new StringBuilder("Band: " + name);
+        StringBuilder artistInfo = new StringBuilder("Band: " + name + "\n" + "Members: " + "\n" + members);
         return artistInfo.toString();
+    }
+
+
+    public void removeMemberById(String id) {
+        for (Artist artist : members) {
+            if (artist.getArtistId().equals(id)) {
+                members.remove(artist);
+                break;
+            }
+        }
     }
 }

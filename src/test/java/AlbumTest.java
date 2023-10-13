@@ -1,4 +1,3 @@
-import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -6,6 +5,7 @@ import com.google.gson.JsonParser;
 import org.example.Album;
 import org.example.AlbumType;
 import org.example.Artist;
+import org.example.MusicTrack;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,25 +15,46 @@ import java.util.Random;
 
 public class AlbumTest {
     public static void main(String[] args) {
-       generateAnAlbum();
+//        testAddTrack();
+        generateAlbumFromJson();
+    }
+
+    public static void testAddTrack() {
+        Album album = new Album("album");
+        System.out.println(album);
+
+
+        System.out.println("------------------");
+        Artist artist = ArtistTest.generatAnArtist();
+        MusicTrack track = TracksTest.generateAMusicTrack(artist);
+        album.addTrack(track);
+        System.out.println(album);
+    }
+
+    public static void testRemoveTrack() {
+        Album album = new Album("album");
+        Artist artist = ArtistTest.generatAnArtist();
+        MusicTrack track = TracksTest.generateAMusicTrack(artist);
+        album.addTrack(track);
+        System.out.println(album);
+
+        System.out.println("------------------");
+        album.removeTrack(track);
+        System.out.println(album);
     }
 
     public static void generateAlbumFromJson() {
         String jsonFilePath = "src/main/resources/albums.json";
 
         try (FileReader fileReader = new FileReader(jsonFilePath)) {
-            // Parse the JSON file using Gson
             JsonElement jsonElement = JsonParser.parseReader(fileReader);
             JsonArray jsonArray = jsonElement.getAsJsonArray();
 
-            // Create a list to store Album objects
             List<Album> albums = new ArrayList<>();
 
-            // Iterate through the JSON array and create Album objects
             for (JsonElement albumElement : jsonArray) {
                 JsonObject albumObject = albumElement.getAsJsonObject();
 
-                // Extract album properties from JSON
                 String albumName = albumObject.get("name").getAsString();
                 AlbumType albumType = AlbumType.valueOf(albumObject.get("type").getAsString());
                 JsonObject artistObject = albumObject.get("artist").getAsJsonObject();
@@ -61,15 +82,14 @@ public class AlbumTest {
 
     public static Album generateAnAlbum() {
         String albumName = generateRandomAlbumName();
-        AlbumType albumType = AlbumType.valueOf(generateRandomAlbumType());
         Artist artist = ArtistTest.generatAnArtist();
 
         Album album = new Album(albumName);
         int trackNum = new Random().nextInt(10) + 5;
+
         for (int i = 0; i < trackNum; i++) {
             album.addTrack(TracksTest.generateAMusicTrack(artist));
         }
-        System.out.println(album);
         return album;
     }
 

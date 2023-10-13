@@ -49,4 +49,8 @@ public class Artist implements Identifier {
 
         return "artist-" + timestamp + "-" + randomUUID;
     }
+
+    public String getArtistId() {
+        return artistId;
+    }
 }

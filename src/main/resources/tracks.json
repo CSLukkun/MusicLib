@@ -5,7 +5,7 @@
       "name": "John Smith",
       "bandsIn": ["Band A"]
     },
-    "date": 1995,
+    "date": "2022-01-01",
     "length": 4.15,
     "rating": 4,
     "location": "path/to/track_1.mp3",
@@ -16,53 +16,127 @@
   {
     "title": "Track 2",
     "artist": {
-      "name": "Alice Johnson",
+      "name": "Jane Doe",
       "bandsIn": ["Band B"]
     },
-    "date": 2002,
-    "length": 3.50,
-    "rating": 3,
+    "date": "2022-03-15",
+    "length": 3.45,
+    "rating": 5,
     "location": "path/to/track_2.mp3",
-    "size": 432100,
-    "playCount": 75,
+    "size": 789123,
+    "playCount": 200,
     "album": "Album B"
   },
   {
     "title": "Track 3",
     "artist": {
-      "name": "Michael Brown",
-      "bandsIn": ["Band X"]
+      "name": "Mike Johnson",
+      "bandsIn": ["Band C"]
     },
-    "date": 1988,
-    "length": 5.30,
-    "rating": 5,
+    "date": "2022-07-22",
+    "length": 5.10,
+    "rating": 3,
     "location": "path/to/track_3.mp3",
-    "size": 765432,
-    "playCount": 200,
+    "size": 654321,
+    "playCount": 75,
     "album": "Album C"
   },
   {
     "title": "Track 4",
-    "date": 1999,
-    "length": 4.00,
+    "artist": {
+      "name": "Emily Brown",
+      "bandsIn": ["Band A", "Band D"]
+    },
+    "date": "2022-05-10",
+    "length": 4.30,
     "rating": 4,
     "location": "path/to/track_4.mp3",
-    "size": 654321,
+    "size": 987654,
     "playCount": 120,
     "album": "Album D"
   },
   {
     "title": "Track 5",
     "artist": {
-      "name": "David Lee",
-      "bandsIn": ["Band C"]
+      "name": "David Wilson",
+      "bandsIn": ["Band E"]
     },
-    "date": 2005,
-    "length": 3.25,
-    "rating": 3,
+    "date": "2022-11-28",
+    "length": 3.55,
+    "rating": 4,
     "location": "path/to/track_5.mp3",
-    "size": 987654,
-    "playCount": 90,
+    "size": 456789,
+    "playCount": 180,
     "album": "Album E"
+  },
+  {
+    "title": "Track 6",
+    "artist": {
+      "name": "Sarah Davis",
+      "bandsIn": ["Band F"]
+    },
+    "date": "2022-02-14",
+    "length": 4.00,
+    "rating": 5,
+    "location": "path/to/track_6.mp3",
+    "size": 543210,
+    "playCount": 220,
+    "album": "Album F"
+  },
+  {
+    "title": "Track 7",
+    "artist": {
+      "name": "Chris Evans",
+      "bandsIn": ["Band G"]
+    },
+    "date": "2022-09-07",
+    "length": 4.50,
+    "rating": 4,
+    "location": "path/to/track_7.mp3",
+    "size": 876543,
+    "playCount": 90,
+    "album": "Album G"
+  },
+  {
+    "title": "Track 8",
+    "artist": {
+      "name": "Olivia White",
+      "bandsIn": ["Band H"]
+    },
+    "date": "2022-06-30",
+    "length": 3.20,
+    "rating": 3,
+    "location": "path/to/track_8.mp3",
+    "size": 234567,
+    "playCount": 50,
+    "album": "Album H"
+  },
+  {
+    "title": "Track 9",
+    "artist": {
+      "name": "Michael Brown",
+      "bandsIn": ["Band A", "Band I"]
+    },
+    "date": "2022-12-05",
+    "length": 4.10,
+    "rating": 4,
+    "location": "path/to/track_9.mp3",
+    "size": 654321,
+    "playCount": 110,
+    "album": "Album I"
+  },
+  {
+    "title": "Track 10",
+    "artist": {
+      "name": "Emma Taylor",
+      "bandsIn": ["Band J"]
+    },
+    "date": "2022-04-18",
+    "length": 3.40,
+    "rating": 4,
+    "location": "path/to/track_10.mp3",
+    "size": 345678,
+    "playCount": 160,
+    "album": "Album J"
   }
 ]

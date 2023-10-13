@@ -1,16 +1,41 @@
+import org.example.Artist;
 import org.example.Band;
 import java.util.Random;
-
 
 public class BandTest {
 
     public static void main(String args[]) {
-        System.out.println(
-                generateBand()
-        );
+        removeMemberById();
     }
 
-    public static Band generateBand() {
+    public static void addMember() {
+        Band band = generateABand();
+        Artist artist = new Artist("John");
+        band.addMember(artist);
+        System.out.println(band);
+    }
+
+    public static void removeMember() {
+        Band band = generateABand();
+        Artist artist = new Artist("John");
+        band.addMember(artist);
+        System.out.println(band);
+        band.removeMember(artist);
+        System.out.println(band);
+    }
+
+    public static void removeMemberById(){
+        Band band = generateABand();
+        Artist artist = new Artist("John");
+        Artist artist1 = new Artist("Tom");
+        band.addMember(artist);
+        band.addMember(artist1);
+        System.out.println(band);
+        band.removeMemberById(artist.getArtistId());
+        System.out.println(band);
+    }
+
+    public static Band generateABand() {
         return new Band(generateRandomBandName());
     }
     public static String generateRandomBandName() {
@@ -22,6 +47,4 @@ public class BandTest {
         String noun = NOUNS[random.nextInt(NOUNS.length)];
         return adjective + " " + noun;
     }
-
-
 }

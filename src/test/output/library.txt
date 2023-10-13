@@ -1,0 +1,5 @@
+[ TrackName: Title7F , Artist: Brown , originalAlbumName: Back to Basics , Date: Fri Oct 13 11:49:17 BST 2023 , lengthInSeconds: 2838 , Rating: 0 , Location: pathA , fileSizeInBytes: 289597 , PlayCount: 98
+,  TrackName: Title1C , Artist: Thomas , originalAlbumName: Songs of Love and Heartbreak , Date: Fri Oct 13 11:49:17 BST 2023 , lengthInSeconds: 3121 , Rating: 0 , Location: pathA , fileSizeInBytes: 60617 , PlayCount: 247
+,  TrackName: Title6E , Artist: Wilson , originalAlbumName: Midnight Serenade , Date: Fri Oct 13 11:49:17 BST 2023 , lengthInSeconds: 1740 , Rating: 0 , Location: pathA , fileSizeInBytes: 518187 , PlayCount: 674
+,  TrackName: Title1E , Artist: Brown , originalAlbumName: Greatest Hits , Date: Fri Oct 13 11:49:17 BST 2023 , lengthInSeconds: 9036 , Rating: 0 , Location: pathA , fileSizeInBytes: 714755 , PlayCount: 888
+]

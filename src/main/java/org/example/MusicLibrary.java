@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
@@ -9,16 +10,19 @@ import java.util.UUID;
  */
 public class MusicLibrary implements Identifier {
     private String libId;
-    private List<MusicTrack> tracks;
-    private List<Album> albums;
+
+    private String name;
+    private HashMap<String,MusicTrack> tracks;
+    private HashMap<String,Album> albums;
 
     /**
      * Constructs a music library with empty lists of tracks and albums.
      */
-    public MusicLibrary() {
+    public MusicLibrary(String name) {
+        this.name = name;
         this.libId = generateUniqueId();
-        this.tracks = new ArrayList<>();
-        this.albums = new ArrayList<>();
+        this.tracks = new HashMap<>();
+        this.albums = new HashMap<>();
     }
 
     /**
@@ -27,7 +31,7 @@ public class MusicLibrary implements Identifier {
      * @param track The track to be added.
      */
     public void addTrack(MusicTrack track) {
-        tracks.add(track);
+        tracks.put(track.getTrackId(), track);
     }
 
     /**
@@ -36,7 +40,7 @@ public class MusicLibrary implements Identifier {
      * @param album The album to be added.
      */
     public void addAlbum(Album album) {
-        albums.add(album);
+        albums.put(album.getAlbumId(), album);
     }
 
     /**
@@ -44,21 +48,20 @@ public class MusicLibrary implements Identifier {
      *
      * @return A list of tracks with the lowest rating.
      */
-    public List<MusicTrack> getTracksWithLowestRating() {
+    public ArrayList<MusicTrack> getTracksWithLowestRating() {
         if (tracks.isEmpty()) {
             return new ArrayList<>();
         }
 
         int lowestRating = Integer.MAX_VALUE;
-        List<MusicTrack> lowestRatedTracks = new ArrayList<>();
+        ArrayList<MusicTrack> lowestRatedTracks = new ArrayList<>();
 
-        for (MusicTrack track : tracks) {
-            int trackRating = track.getRating();
-            if (trackRating < lowestRating) {
-                lowestRating = trackRating;
+        for (MusicTrack track : tracks.values()) {
+            if (track.getRating() < lowestRating) {
+                lowestRating = track.getRating();
                 lowestRatedTracks.clear();
                 lowestRatedTracks.add(track);
-            } else if (trackRating == lowestRating) {
+            } else if (track.getRating() == lowestRating) {
                 lowestRatedTracks.add(track);
             }
         }
@@ -72,5 +75,11 @@ public class MusicLibrary implements Identifier {
         String randomUUID = UUID.randomUUID().toString();
 
         return "lib-" + timestamp + "-" + randomUUID;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder libraryInfo = new StringBuilder("Library: " + name + "\n" + "Tracks: " + "\n" + tracks + "\n" + "Albums: " + "\n" + albums);
+        return libraryInfo.toString();
     }
 }

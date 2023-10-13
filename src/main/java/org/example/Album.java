@@ -11,11 +11,11 @@ import java.util.UUID;
  */
 public class Album implements Identifier {
 
-    private String albumId;
-    private String name;
+    protected String albumId;
+    protected String name;
     protected AlbumType type;
     private Artist artist;
-    protected List<MusicTrack> tracks;
+    protected ArrayList<String> tracks;
 
     /**
      * Constructs an album with the given name, type, and artist.
@@ -23,9 +23,9 @@ public class Album implements Identifier {
      */
     public Album(String name) {
         this.albumId = generateUniqueId();
+        this.artist = new Artist("There is no artist");
         this.name = name;
         this.type = AlbumType.COMMON_ALBUM;
-        this.artist = null;
         this.tracks = new ArrayList<>();
     }
 
@@ -39,7 +39,9 @@ public class Album implements Identifier {
      * @param track The track to be added.
      */
     public void addTrack(MusicTrack track) {
-        tracks.add(track);
+        tracks.add(track.getTrackId());
+        track.setOriginalAlbum(this);
+        artist = track.getArtist();
     }
 
     public void removeTrack(MusicTrack track) {
@@ -51,7 +53,7 @@ public class Album implements Identifier {
      *
      * @return The total time of the album.
      */
-    public int getTotalTimeOfTracks() {
+    public int getTotalTimeOfTracks(ArrayList<MusicTrack> tracks) {
         int totalTimeOfTracks = 0;
 
         for (MusicTrack track : tracks) {
@@ -66,7 +68,7 @@ public class Album implements Identifier {
      *
      * @return The total file size of the album.
      */
-    public long getTotalFileSize() {
+    public long getTotalFileSize(ArrayList<MusicTrack> tracks) {
         long totalFileSize = 0;
         for (MusicTrack track : tracks) {
             totalFileSize += track.getFileSizeInBytes();
@@ -79,7 +81,7 @@ public class Album implements Identifier {
      *
      * @return The average rating of the album's tracks.
      */
-    public double getAverageRating() {
+    public double getAverageRating(ArrayList<MusicTrack> tracks) {
         if (tracks.isEmpty()) {
             return 0.0;
         }
@@ -98,7 +100,7 @@ public class Album implements Identifier {
 
     @Override
     public String toString() {
-        return "Album: " + name + ", Type: " + type + ", Artist: " + artist.getName();
+        return "AlbumName: " + name+ "\n" + "Tracks: " + "\n" + tracks;
     }
 
     @Override
@@ -107,5 +109,9 @@ public class Album implements Identifier {
         String randomUUID = UUID.randomUUID().toString();
 
         return "album-" + timestamp + "-" + randomUUID;
+    }
+
+    public ArrayList<String> getTracks() {
+        return tracks;
     }
 }

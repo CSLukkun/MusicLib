@@ -24,7 +24,6 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
      * Constructs a music track with the given title and artist.
      *
      * @param title  The title of the track.
-     * @param artist The primary artist who performed the track.
      */
     public MusicTrack(String title) {
         this.trackId = generateUniqueId();
@@ -36,7 +35,8 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
         this.fileSizeInBytes = 0L;
         this.guestArtists = new ArrayList<>();
         this.playCount = 0;
-        this.artist = null;
+        this.artist = new Artist("Unknown");
+        this.originalAlbum = new Album("Unknown");
     }
 
 
@@ -141,7 +141,16 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
 
     @Override
     public String toString() {
-        return "Track: " + title + ", Artist: " + artist.getName() + ", Play Count: " + playCount;
+        return  " TrackName: " + title  +
+                " , Artist: " + artist.name  +
+                " , originalAlbumName: " + getOriginalAlbum().name +
+                " , Date: " + date +
+                " , lengthInSeconds: " + lengthInSeconds +
+                " , Rating: " + rating +
+                " , Location: " + location +
+                " , fileSizeInBytes: " + fileSizeInBytes +
+                " , PlayCount: " + playCount +
+                "\n";
     }
 
     public void setArtist(Artist artist) {
@@ -185,7 +194,6 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
     public String generateUniqueId() {
         String timestamp = Long.toString(System.currentTimeMillis());
         String randomUUID = UUID.randomUUID().toString();
-
         return "track-" + timestamp + "-" + randomUUID;
     }
 }

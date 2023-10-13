@@ -15,12 +15,21 @@ public class SoloistTest {
     }
 
     public static String generateRandomName() {
-        final String[] FIRST_NAMES = {"John", "Mary", "David", "Lisa", "Michael", "Jennifer", "James", "Emily", "Robert", "Jessica"};
-        final String[] LAST_NAMES = {"Smith", "Johnson", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson", "Thomas"};
+        final String[] NAMES = {
+                "Smith",
+                "Johnson",
+                "Brown",
+                "Davis",
+                "Miller",
+                "Wilson",
+                "Moore",
+                "Taylor",
+                "Anderson",
+                "Thomas"
+        };
 
         Random random = new Random();
-        String firstName = FIRST_NAMES[random.nextInt(FIRST_NAMES.length)];
-        String lastName = LAST_NAMES[random.nextInt(LAST_NAMES.length)];
-        return firstName + " " + lastName;
+
+        return NAMES[random.nextInt(NAMES.length)];
     }
 }
