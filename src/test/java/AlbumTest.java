@@ -1,21 +1,18 @@
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
 import org.example.Album;
-import org.example.AlbumType;
 import org.example.Artist;
 import org.example.MusicTrack;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class AlbumTest {
     public static void main(String[] args) {
-//        testAddTrack();
         generateAlbumFromJson();
     }
 
@@ -47,31 +44,15 @@ public class AlbumTest {
         String jsonFilePath = "src/main/resources/albums.json";
 
         try (FileReader fileReader = new FileReader(jsonFilePath)) {
-            JsonElement jsonElement = JsonParser.parseReader(fileReader);
-            JsonArray jsonArray = jsonElement.getAsJsonArray();
 
-            List<Album> albums = new ArrayList<>();
+            Type albumListType = new TypeToken<List<Album>>() {}.getType();
 
-            for (JsonElement albumElement : jsonArray) {
-                JsonObject albumObject = albumElement.getAsJsonObject();
+            Gson gson = new GsonBuilder()
+                    .setDateFormat("yyyy-MM-dd")
+                    .create();
 
-                String albumName = albumObject.get("name").getAsString();
-                AlbumType albumType = AlbumType.valueOf(albumObject.get("type").getAsString());
-                JsonObject artistObject = albumObject.get("artist").getAsJsonObject();
+            ArrayList<Album> albums = gson.fromJson(fileReader, albumListType);
 
-                // Extract artist properties from JSON
-                String artistName = artistObject.get("name").getAsString();
-
-                // Create an Artist object
-                Artist artist = new Artist(artistName);
-
-                // Create an Album object and add it to the list
-                Album album = new Album(albumName);
-                albums.add(album);
-            }
-
-            // Now you have a list of Album objects
-            // You can use the albums list in your application
             for (Album album : albums) {
                 System.out.println(album);
             }

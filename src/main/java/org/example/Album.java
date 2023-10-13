@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.UUID;
 
 
@@ -16,6 +15,14 @@ public class Album implements Identifier {
     protected AlbumType type;
     private Artist artist;
     protected ArrayList<String> tracks;
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    public Artist getArtist() {
+        return artist;
+    }
 
     /**
      * Constructs an album with the given name, type, and artist.

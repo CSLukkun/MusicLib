@@ -16,9 +16,7 @@ public class LibraryTest {
         ArrayList<MusicTrack> lowestRat = library.getTracksWithLowestRating();
         System.out.println(lowestRat);
         saveToStringToFile("library.txt", String.valueOf(lowestRat));
-
         saveToJsonToFile("library.json", library);
-
     }
 
     public static MusicLibrary generateALibrary() {

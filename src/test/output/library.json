@@ -1,1 +1,671 @@
-{"libId":"lib-1697194157292-21d33621-d89b-49c7-8777-605253d5ae67","name":"library","tracks":{"track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665":{"trackId":"track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665","title":"Title1G","artist":{"artistId":"artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa","name":"Moore"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":3323,"rating":3,"location":"pathA","fileSizeInBytes":610448,"guestArtists":[],"playCount":344,"originalAlbum":{"albumId":"album-1697194157318-9a1aad13-9e34-4b0e-a92f-bd00f29059b6","name":"Reflections","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa","name":"Moore"},"tracks":["track-1697194157327-4bddde55-2622-42ac-a88b-f1d7912ec6cc","track-1697194157328-416f13de-5b47-440e-b0a0-1227b9188abf","track-1697194157328-46507da2-3ec8-4cd6-86ed-216784dd6ab1","track-1697194157328-99dae3f5-7415-4e9e-af25-9095cbe253f7","track-1697194157328-c9d97c2d-1069-442a-8219-f036afe167e5","track-1697194157328-79874f23-c0bd-4eba-9e00-1125b5947ec7","track-1697194157328-4d0c7f82-46fb-4c4c-a4d7-cf5bbdfcb8e5","track-1697194157328-171ea9e7-c3b5-4086-8846-ab0b1342b329","track-1697194157328-3e8acb3a-b0d2-48bb-9245-717eb679f1eb","track-1697194157329-40e25edb-3742-47a3-be72-f2661c33ad83","track-1697194157329-47730b81-3531-4b9a-8f56-b919e4feb6bb","track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665"]}},"track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc":{"trackId":"track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc","title":"Title10B","artist":{"artistId":"artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c","name":"Miller"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":5378,"rating":3,"location":"pathB","fileSizeInBytes":366675,"guestArtists":[],"playCount":992,"originalAlbum":{"albumId":"album-1697194157332-0da4d37a-5e99-4087-8f2e-e59343b7a082","name":"Reflections","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c","name":"Miller"},"tracks":["track-1697194157332-30693a8d-69ee-4913-9278-3458226ef385","track-1697194157332-5e82ff5e-f3bd-4f0f-97a6-8bcf6b3a2c98","track-1697194157332-7dea577d-ab28-48f5-a089-93fcf014491d","track-1697194157332-350b193e-6379-4472-bfad-6003b89a0fdf","track-1697194157332-cb2da206-cb41-4c9a-8018-9c8585a89372","track-1697194157332-1488cf94-948f-4fca-91c1-b5e9d31ec3fa","track-1697194157332-b629f44f-9626-4bc5-8f3e-abbd5984a9a4","track-1697194157332-58451636-b8da-4992-b421-1d7f870ac67b","track-1697194157332-376830d0-1448-4206-8a2d-63e9b704786d","track-1697194157332-1e9c0d13-162f-414f-8f85-c0eeec9b002d","track-1697194157332-9b2b0ac1-d7b3-49d3-bcb6-8cdee24cc8c5","track-1697194157332-882c9d96-0891-4855-9e9b-c3294b2ba4b6","track-1697194157332-0e7912eb-3ff9-4bcc-b93a-3564ca88136d","track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc"]}},"track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b":{"trackId":"track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b","title":"Title7F","artist":{"artistId":"artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6","name":"Brown"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":2838,"rating":0,"location":"pathA","fileSizeInBytes":289597,"guestArtists":[],"playCount":98,"originalAlbum":{"albumId":"album-1697194157333-ecb1b89c-02a5-4ea8-9597-7736efde765d","name":"Back to Basics","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6","name":"Brown"},"tracks":["track-1697194157333-161b7847-5e32-4a92-bbc2-00a495ae18fd","track-1697194157333-07351ab8-68a7-447f-8af7-2ff0384c806c","track-1697194157333-cb6277b0-c890-414d-aa48-d744f6de8cb9","track-1697194157333-3ac99845-7d14-45ae-8a7b-c5bcba22259d","track-1697194157333-0ed75ce5-c8ae-416b-814c-7ad3dd66763a","track-1697194157333-dee4340f-5a42-4424-bd7b-46c1b83d6dd9","track-1697194157333-58734c09-5175-44c8-8a02-ebbbcdd2da83","track-1697194157333-e1e91d79-f9e3-4e73-be22-15f194a4def8","track-1697194157333-892f56c2-4880-4c78-8b53-6072825171c5","track-1697194157333-d498689f-6322-489d-81cb-3cde613384ba","track-1697194157333-9aacdaf4-4bc0-4628-93d5-25b2aac4347b","track-1697194157333-09ff39de-33f6-418b-8198-5f0477c00859","track-1697194157333-a79de046-e432-4ccb-afab-df0babb03913","track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b"]}},"track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852":{"trackId":"track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852","title":"Title1C","artist":{"artistId":"artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977","name":"Thomas"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":3121,"rating":0,"location":"pathA","fileSizeInBytes":60617,"guestArtists":[],"playCount":247,"originalAlbum":{"albumId":"album-1697194157330-168a2cd6-8cff-466e-8ba7-bf2a251ce264","name":"Songs of Love and Heartbreak","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977","name":"Thomas"},"tracks":["track-1697194157330-745c400c-726f-4445-9686-7deee1bfdc88","track-1697194157330-5d4f8b7d-61dd-44ea-a730-ce15c7d22901","track-1697194157330-9d7def0f-b5ed-4393-881d-c18d4f8bd335","track-1697194157330-4d13d2b3-0dba-4c5f-8486-2fa87ad118c2","track-1697194157330-82bfd2e1-7d16-4c1a-8fa3-b4336b97b103","track-1697194157330-9c7d54c6-8595-41db-b309-29a05da39f08","track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852"]}},"track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1":{"trackId":"track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1","title":"Title6D","artist":{"artistId":"artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017","name":"Moore"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":3731,"rating":1,"location":"pathB","fileSizeInBytes":173790,"guestArtists":[],"playCount":927,"originalAlbum":{"albumId":"album-1697194157330-d2a59e7a-c7ea-49a7-b96b-860e8c771576","name":"The Journey Begins","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017","name":"Moore"},"tracks":["track-1697194157330-3635eba3-1ffd-40e6-9784-0f040b4d953f","track-1697194157330-d9f0d713-6143-4b08-9ef2-82521773c9d1","track-1697194157330-db2af95a-ce15-45bf-b4f4-3ca839434d0b","track-1697194157331-9bb9b09c-9150-4b80-a5ce-dd798c8d1f10","track-1697194157331-f90daa44-ff3d-414d-9758-e49309a765c0","track-1697194157331-62b1672d-b505-47d3-9fe5-6b93c1101cb0","track-1697194157331-48b6a683-74a8-400d-b3d8-fdadc0466b79","track-1697194157331-8763bdac-7320-41c8-9b2d-04df1cfb8c32","track-1697194157331-f70ee36f-5ad4-4a10-8165-b453a6ff2cf8","track-1697194157331-f6bf0e72-9b2a-4fb2-ad90-d3fefa8370d1","track-1697194157331-53f7d1c8-32ee-4402-84cb-f808a3500b38","track-1697194157331-fe8ddccd-8f32-4a75-942b-46bc9cfc08f4","track-1697194157331-51db0d01-5056-4bea-b191-4030ca2382ae","track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1"]}},"track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c":{"trackId":"track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c","title":"Title6E","artist":{"artistId":"artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96","name":"Wilson"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":1740,"rating":0,"location":"pathA","fileSizeInBytes":518187,"guestArtists":[],"playCount":674,"originalAlbum":{"albumId":"album-1697194157331-6d56e299-cd1f-4ea8-9930-98bba43b736e","name":"Midnight Serenade","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96","name":"Wilson"},"tracks":["track-1697194157331-e3ec574e-dec7-46e7-a028-af1960649c28","track-1697194157331-c177e635-bada-456e-8e83-f4edb26873d7","track-1697194157331-82df5a3a-5f85-4b65-a4b1-494742e4a940","track-1697194157331-afecb10c-3592-4a24-8155-a05ea8a75266","track-1697194157331-3cc032ae-bfbf-49f5-a40c-c30f168c2388","track-1697194157331-45788756-763a-4af9-b9a7-1aef097840d4","track-1697194157331-525b630a-7eac-4e8d-8162-61aaa2e875f3","track-1697194157331-d9e49954-c60f-41e8-be53-a8716a300098","track-1697194157331-5e252058-ee75-4a4f-867d-ab5772232c84","track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c"]}},"track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b":{"trackId":"track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b","title":"Title1E","artist":{"artistId":"artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da","name":"Brown"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":9036,"rating":0,"location":"pathA","fileSizeInBytes":714755,"guestArtists":[],"playCount":888,"originalAlbum":{"albumId":"album-1697194157329-ad967911-df2c-4667-bf8e-2bfe05c555e7","name":"Greatest Hits","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da","name":"Brown"},"tracks":["track-1697194157329-21089b82-b730-4b54-9180-42d5052bc712","track-1697194157329-ba17b864-49bc-4d6b-adf7-cf13c03540c4","track-1697194157329-de9b6f5c-91c1-43e4-99fe-e759b64b3e77","track-1697194157329-32eecba6-0437-4f01-b418-d4cf73fa9c3e","track-1697194157329-f3e2efc6-a138-4b6b-9601-c7ca4045117a","track-1697194157329-817ff843-4b6d-4718-a56d-8b1cd7a8da90","track-1697194157329-bdc72d24-dcf4-4ced-91fc-f911d6b7576c","track-1697194157329-593a210b-89c4-4760-8f62-d5b268d7e1fb","track-1697194157330-8551d940-5783-4a83-8ba7-cb9192502aec","track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b"]}},"track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507":{"trackId":"track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507","title":"Title8E","artist":{"artistId":"artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4","name":"Taylor"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":1682,"rating":2,"location":"pathA","fileSizeInBytes":212726,"guestArtists":[],"playCount":479,"originalAlbum":{"albumId":"album-1697194157332-d13c5fec-9b02-4120-8ca4-1eed2f32e110","name":"Midnight Serenade","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4","name":"Taylor"},"tracks":["track-1697194157332-47c5d23b-9535-4c76-947d-8b3f52ffd2a3","track-1697194157332-ea4bf806-c24f-4746-ad39-4fd7444beb86","track-1697194157332-edeffa44-074d-479b-8093-258d1d6dc667","track-1697194157332-e09f8856-ac56-4c4a-93ae-91da0552dd34","track-1697194157332-5322dafc-ea2c-49a1-9381-78daa771c648","track-1697194157332-a85fa368-6dd5-4d62-8216-bfaa78b0e9f1","track-1697194157332-69d0bc88-6e77-4b41-b061-d96f4c8c8fc9","track-1697194157332-5cac0f8b-4870-4dd8-8f5c-7c84cf705d6a","track-1697194157332-8f697db4-6339-4188-bde8-86438fab7dc3","track-1697194157332-d1259237-b900-46da-b89a-e8c18d6375d9","track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507"]}},"track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a":{"trackId":"track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a","title":"Title2A","artist":{"artistId":"artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d","name":"Johnson"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":424,"rating":2,"location":"pathA","fileSizeInBytes":949287,"guestArtists":[],"playCount":843,"originalAlbum":{"albumId":"album-1697194157333-bbe8ea26-aaea-4ce1-bc8a-454bf037d9fa","name":"The Journey Begins","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d","name":"Johnson"},"tracks":["track-1697194157333-1ec27377-7a5f-4ae8-942e-9f6614a96690","track-1697194157333-b13048bf-5265-4085-8688-d18556ad46cc","track-1697194157333-328a488e-73b0-45a7-bc13-d8bcd1c66440","track-1697194157333-626bab83-426c-4509-bf7a-375dca944f0d","track-1697194157333-b4b1cc9c-ff9e-4ec5-98c6-b47b473f2600","track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a"]}},"track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246":{"trackId":"track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246","title":"Title2C","artist":{"artistId":"artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0","name":"Wilson"},"date":"Oct 13, 2023, 11:49:17 AM","lengthInSeconds":7807,"rating":3,"location":"pathB","fileSizeInBytes":530465,"guestArtists":[],"playCount":399,"originalAlbum":{"albumId":"album-1697194157332-157e1ccc-2149-4447-8e98-e245ea2c7dae","name":"Greatest Hits","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0","name":"Wilson"},"tracks":["track-1697194157332-a13c3e7e-effc-4233-8ea1-97bdef1580e9","track-1697194157333-54d4e4d7-f41e-4b05-a6af-10e502c801f9","track-1697194157333-e958a918-20ce-465c-a453-ca7cc9b757ba","track-1697194157333-d9370344-b0cc-4eb5-a50b-b4a730b7d152","track-1697194157333-4b143d08-310a-405b-a21f-022024548543","track-1697194157333-d8842719-5356-42b8-9308-a2e4f299eb7b","track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246"]}}},"albums":{"album-1697194157333-162bd194-6241-4670-bb27-1db8e529cd5d":{"albumId":"album-1697194157333-162bd194-6241-4670-bb27-1db8e529cd5d","name":"Live in Newcastle","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157333-81878aba-a64f-4b9e-b6e6-4b9e5e737d79","name":"Smith"},"tracks":["track-1697194157333-a6552692-5447-41cf-8ab9-70ddf7297dbb","track-1697194157333-5ddd1cb3-6df5-4c7e-913d-0d83c530a35f","track-1697194157333-371314ae-2783-4b2f-bbf6-165325eb2e51","track-1697194157334-30ecd063-c56f-4a99-8252-835801263122","track-1697194157334-c5672b1a-17ed-41f8-89fa-9cc6789db4ee","track-1697194157334-87f709ba-f83b-4665-acba-3acfd5ac482d","track-1697194157334-5ff883cf-c2f7-4561-8245-06d84589775c"]},"album-1697194157316-2f91355a-956c-4a6b-a7ea-1bbeeb8637a5":{"originalAlbums":{"album-1697194157333-ecb1b89c-02a5-4ea8-9597-7736efde765d":{"albumId":"album-1697194157333-ecb1b89c-02a5-4ea8-9597-7736efde765d","name":"Back to Basics","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6","name":"Brown"},"tracks":["track-1697194157333-161b7847-5e32-4a92-bbc2-00a495ae18fd","track-1697194157333-07351ab8-68a7-447f-8af7-2ff0384c806c","track-1697194157333-cb6277b0-c890-414d-aa48-d744f6de8cb9","track-1697194157333-3ac99845-7d14-45ae-8a7b-c5bcba22259d","track-1697194157333-0ed75ce5-c8ae-416b-814c-7ad3dd66763a","track-1697194157333-dee4340f-5a42-4424-bd7b-46c1b83d6dd9","track-1697194157333-58734c09-5175-44c8-8a02-ebbbcdd2da83","track-1697194157333-e1e91d79-f9e3-4e73-be22-15f194a4def8","track-1697194157333-892f56c2-4880-4c78-8b53-6072825171c5","track-1697194157333-d498689f-6322-489d-81cb-3cde613384ba","track-1697194157333-9aacdaf4-4bc0-4628-93d5-25b2aac4347b","track-1697194157333-09ff39de-33f6-418b-8198-5f0477c00859","track-1697194157333-a79de046-e432-4ccb-afab-df0babb03913","track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b"]},"album-1697194157331-6d56e299-cd1f-4ea8-9930-98bba43b736e":{"albumId":"album-1697194157331-6d56e299-cd1f-4ea8-9930-98bba43b736e","name":"Midnight Serenade","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96","name":"Wilson"},"tracks":["track-1697194157331-e3ec574e-dec7-46e7-a028-af1960649c28","track-1697194157331-c177e635-bada-456e-8e83-f4edb26873d7","track-1697194157331-82df5a3a-5f85-4b65-a4b1-494742e4a940","track-1697194157331-afecb10c-3592-4a24-8155-a05ea8a75266","track-1697194157331-3cc032ae-bfbf-49f5-a40c-c30f168c2388","track-1697194157331-45788756-763a-4af9-b9a7-1aef097840d4","track-1697194157331-525b630a-7eac-4e8d-8162-61aaa2e875f3","track-1697194157331-d9e49954-c60f-41e8-be53-a8716a300098","track-1697194157331-5e252058-ee75-4a4f-867d-ab5772232c84","track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c"]},"album-1697194157330-d2a59e7a-c7ea-49a7-b96b-860e8c771576":{"albumId":"album-1697194157330-d2a59e7a-c7ea-49a7-b96b-860e8c771576","name":"The Journey Begins","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017","name":"Moore"},"tracks":["track-1697194157330-3635eba3-1ffd-40e6-9784-0f040b4d953f","track-1697194157330-d9f0d713-6143-4b08-9ef2-82521773c9d1","track-1697194157330-db2af95a-ce15-45bf-b4f4-3ca839434d0b","track-1697194157331-9bb9b09c-9150-4b80-a5ce-dd798c8d1f10","track-1697194157331-f90daa44-ff3d-414d-9758-e49309a765c0","track-1697194157331-62b1672d-b505-47d3-9fe5-6b93c1101cb0","track-1697194157331-48b6a683-74a8-400d-b3d8-fdadc0466b79","track-1697194157331-8763bdac-7320-41c8-9b2d-04df1cfb8c32","track-1697194157331-f70ee36f-5ad4-4a10-8165-b453a6ff2cf8","track-1697194157331-f6bf0e72-9b2a-4fb2-ad90-d3fefa8370d1","track-1697194157331-53f7d1c8-32ee-4402-84cb-f808a3500b38","track-1697194157331-fe8ddccd-8f32-4a75-942b-46bc9cfc08f4","track-1697194157331-51db0d01-5056-4bea-b191-4030ca2382ae","track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1"]},"album-1697194157332-157e1ccc-2149-4447-8e98-e245ea2c7dae":{"albumId":"album-1697194157332-157e1ccc-2149-4447-8e98-e245ea2c7dae","name":"Greatest Hits","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0","name":"Wilson"},"tracks":["track-1697194157332-a13c3e7e-effc-4233-8ea1-97bdef1580e9","track-1697194157333-54d4e4d7-f41e-4b05-a6af-10e502c801f9","track-1697194157333-e958a918-20ce-465c-a453-ca7cc9b757ba","track-1697194157333-d9370344-b0cc-4eb5-a50b-b4a730b7d152","track-1697194157333-4b143d08-310a-405b-a21f-022024548543","track-1697194157333-d8842719-5356-42b8-9308-a2e4f299eb7b","track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246"]},"album-1697194157318-9a1aad13-9e34-4b0e-a92f-bd00f29059b6":{"albumId":"album-1697194157318-9a1aad13-9e34-4b0e-a92f-bd00f29059b6","name":"Reflections","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa","name":"Moore"},"tracks":["track-1697194157327-4bddde55-2622-42ac-a88b-f1d7912ec6cc","track-1697194157328-416f13de-5b47-440e-b0a0-1227b9188abf","track-1697194157328-46507da2-3ec8-4cd6-86ed-216784dd6ab1","track-1697194157328-99dae3f5-7415-4e9e-af25-9095cbe253f7","track-1697194157328-c9d97c2d-1069-442a-8219-f036afe167e5","track-1697194157328-79874f23-c0bd-4eba-9e00-1125b5947ec7","track-1697194157328-4d0c7f82-46fb-4c4c-a4d7-cf5bbdfcb8e5","track-1697194157328-171ea9e7-c3b5-4086-8846-ab0b1342b329","track-1697194157328-3e8acb3a-b0d2-48bb-9245-717eb679f1eb","track-1697194157329-40e25edb-3742-47a3-be72-f2661c33ad83","track-1697194157329-47730b81-3531-4b9a-8f56-b919e4feb6bb","track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665"]},"album-1697194157329-ad967911-df2c-4667-bf8e-2bfe05c555e7":{"albumId":"album-1697194157329-ad967911-df2c-4667-bf8e-2bfe05c555e7","name":"Greatest Hits","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da","name":"Brown"},"tracks":["track-1697194157329-21089b82-b730-4b54-9180-42d5052bc712","track-1697194157329-ba17b864-49bc-4d6b-adf7-cf13c03540c4","track-1697194157329-de9b6f5c-91c1-43e4-99fe-e759b64b3e77","track-1697194157329-32eecba6-0437-4f01-b418-d4cf73fa9c3e","track-1697194157329-f3e2efc6-a138-4b6b-9601-c7ca4045117a","track-1697194157329-817ff843-4b6d-4718-a56d-8b1cd7a8da90","track-1697194157329-bdc72d24-dcf4-4ced-91fc-f911d6b7576c","track-1697194157329-593a210b-89c4-4760-8f62-d5b268d7e1fb","track-1697194157330-8551d940-5783-4a83-8ba7-cb9192502aec","track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b"]},"album-1697194157332-d13c5fec-9b02-4120-8ca4-1eed2f32e110":{"albumId":"album-1697194157332-d13c5fec-9b02-4120-8ca4-1eed2f32e110","name":"Midnight Serenade","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4","name":"Taylor"},"tracks":["track-1697194157332-47c5d23b-9535-4c76-947d-8b3f52ffd2a3","track-1697194157332-ea4bf806-c24f-4746-ad39-4fd7444beb86","track-1697194157332-edeffa44-074d-479b-8093-258d1d6dc667","track-1697194157332-e09f8856-ac56-4c4a-93ae-91da0552dd34","track-1697194157332-5322dafc-ea2c-49a1-9381-78daa771c648","track-1697194157332-a85fa368-6dd5-4d62-8216-bfaa78b0e9f1","track-1697194157332-69d0bc88-6e77-4b41-b061-d96f4c8c8fc9","track-1697194157332-5cac0f8b-4870-4dd8-8f5c-7c84cf705d6a","track-1697194157332-8f697db4-6339-4188-bde8-86438fab7dc3","track-1697194157332-d1259237-b900-46da-b89a-e8c18d6375d9","track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507"]},"album-1697194157333-bbe8ea26-aaea-4ce1-bc8a-454bf037d9fa":{"albumId":"album-1697194157333-bbe8ea26-aaea-4ce1-bc8a-454bf037d9fa","name":"The Journey Begins","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d","name":"Johnson"},"tracks":["track-1697194157333-1ec27377-7a5f-4ae8-942e-9f6614a96690","track-1697194157333-b13048bf-5265-4085-8688-d18556ad46cc","track-1697194157333-328a488e-73b0-45a7-bc13-d8bcd1c66440","track-1697194157333-626bab83-426c-4509-bf7a-375dca944f0d","track-1697194157333-b4b1cc9c-ff9e-4ec5-98c6-b47b473f2600","track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a"]},"album-1697194157332-0da4d37a-5e99-4087-8f2e-e59343b7a082":{"albumId":"album-1697194157332-0da4d37a-5e99-4087-8f2e-e59343b7a082","name":"Reflections","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c","name":"Miller"},"tracks":["track-1697194157332-30693a8d-69ee-4913-9278-3458226ef385","track-1697194157332-5e82ff5e-f3bd-4f0f-97a6-8bcf6b3a2c98","track-1697194157332-7dea577d-ab28-48f5-a089-93fcf014491d","track-1697194157332-350b193e-6379-4472-bfad-6003b89a0fdf","track-1697194157332-cb2da206-cb41-4c9a-8018-9c8585a89372","track-1697194157332-1488cf94-948f-4fca-91c1-b5e9d31ec3fa","track-1697194157332-b629f44f-9626-4bc5-8f3e-abbd5984a9a4","track-1697194157332-58451636-b8da-4992-b421-1d7f870ac67b","track-1697194157332-376830d0-1448-4206-8a2d-63e9b704786d","track-1697194157332-1e9c0d13-162f-414f-8f85-c0eeec9b002d","track-1697194157332-9b2b0ac1-d7b3-49d3-bcb6-8cdee24cc8c5","track-1697194157332-882c9d96-0891-4855-9e9b-c3294b2ba4b6","track-1697194157332-0e7912eb-3ff9-4bcc-b93a-3564ca88136d","track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc"]},"album-1697194157330-168a2cd6-8cff-466e-8ba7-bf2a251ce264":{"albumId":"album-1697194157330-168a2cd6-8cff-466e-8ba7-bf2a251ce264","name":"Songs of Love and Heartbreak","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977","name":"Thomas"},"tracks":["track-1697194157330-745c400c-726f-4445-9686-7deee1bfdc88","track-1697194157330-5d4f8b7d-61dd-44ea-a730-ce15c7d22901","track-1697194157330-9d7def0f-b5ed-4393-881d-c18d4f8bd335","track-1697194157330-4d13d2b3-0dba-4c5f-8486-2fa87ad118c2","track-1697194157330-82bfd2e1-7d16-4c1a-8fa3-b4336b97b103","track-1697194157330-9c7d54c6-8595-41db-b309-29a05da39f08","track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852"]}},"artists":{"artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96":{"artistId":"artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96","name":"Wilson"},"artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c":{"artistId":"artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c","name":"Miller"},"artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d":{"artistId":"artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d","name":"Johnson"},"artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa":{"artistId":"artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa","name":"Moore"},"artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4":{"artistId":"artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4","name":"Taylor"},"artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6":{"artistId":"artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6","name":"Brown"},"artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da":{"artistId":"artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da","name":"Brown"},"artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0":{"artistId":"artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0","name":"Wilson"},"artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977":{"artistId":"artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977","name":"Thomas"},"artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017":{"artistId":"artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017","name":"Moore"}},"albumId":"album-1697194157316-2f91355a-956c-4a6b-a7ea-1bbeeb8637a5","name":"compilationAlbum4","type":"COMMON_ALBUM","artist":{"artistId":"artist-1697194157316-01095c3b-407d-4e9f-9b76-5c874ced592a","name":"There is no artist"},"tracks":["track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665","track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b","track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852","track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1","track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c","track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507","track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc","track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246","track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b","track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a"]}}}
+{
+  "libId": "lib-1697194157292-21d33621-d89b-49c7-8777-605253d5ae67",
+  "name": "library",
+  "tracks": {
+    "track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665": {
+      "trackId": "track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665",
+      "title": "Title1G",
+      "artist": {
+        "artistId": "artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa",
+        "name": "Moore"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 3323,
+      "rating": 3,
+      "location": "pathA",
+      "fileSizeInBytes": 610448,
+      "guestArtists": [],
+      "playCount": 344,
+      "originalAlbum": {
+        "albumId": "album-1697194157318-9a1aad13-9e34-4b0e-a92f-bd00f29059b6",
+        "name": "Reflections",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa",
+          "name": "Moore"
+        },
+        "tracks": [
+          "track-1697194157327-4bddde55-2622-42ac-a88b-f1d7912ec6cc",
+          "track-1697194157328-416f13de-5b47-440e-b0a0-1227b9188abf",
+          "track-1697194157328-46507da2-3ec8-4cd6-86ed-216784dd6ab1",
+          "track-1697194157328-99dae3f5-7415-4e9e-af25-9095cbe253f7",
+          "track-1697194157328-c9d97c2d-1069-442a-8219-f036afe167e5",
+          "track-1697194157328-79874f23-c0bd-4eba-9e00-1125b5947ec7",
+          "track-1697194157328-4d0c7f82-46fb-4c4c-a4d7-cf5bbdfcb8e5",
+          "track-1697194157328-171ea9e7-c3b5-4086-8846-ab0b1342b329",
+          "track-1697194157328-3e8acb3a-b0d2-48bb-9245-717eb679f1eb",
+          "track-1697194157329-40e25edb-3742-47a3-be72-f2661c33ad83",
+          "track-1697194157329-47730b81-3531-4b9a-8f56-b919e4feb6bb",
+          "track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665"
+        ]
+      }
+    },
+    "track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc": {
+      "trackId": "track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc",
+      "title": "Title10B",
+      "artist": {
+        "artistId": "artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c",
+        "name": "Miller"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 5378,
+      "rating": 3,
+      "location": "pathB",
+      "fileSizeInBytes": 366675,
+      "guestArtists": [],
+      "playCount": 992,
+      "originalAlbum": {
+        "albumId": "album-1697194157332-0da4d37a-5e99-4087-8f2e-e59343b7a082",
+        "name": "Reflections",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c",
+          "name": "Miller"
+        },
+        "tracks": [
+          "track-1697194157332-30693a8d-69ee-4913-9278-3458226ef385",
+          "track-1697194157332-5e82ff5e-f3bd-4f0f-97a6-8bcf6b3a2c98",
+          "track-1697194157332-7dea577d-ab28-48f5-a089-93fcf014491d",
+          "track-1697194157332-350b193e-6379-4472-bfad-6003b89a0fdf",
+          "track-1697194157332-cb2da206-cb41-4c9a-8018-9c8585a89372",
+          "track-1697194157332-1488cf94-948f-4fca-91c1-b5e9d31ec3fa",
+          "track-1697194157332-b629f44f-9626-4bc5-8f3e-abbd5984a9a4",
+          "track-1697194157332-58451636-b8da-4992-b421-1d7f870ac67b",
+          "track-1697194157332-376830d0-1448-4206-8a2d-63e9b704786d",
+          "track-1697194157332-1e9c0d13-162f-414f-8f85-c0eeec9b002d",
+          "track-1697194157332-9b2b0ac1-d7b3-49d3-bcb6-8cdee24cc8c5",
+          "track-1697194157332-882c9d96-0891-4855-9e9b-c3294b2ba4b6",
+          "track-1697194157332-0e7912eb-3ff9-4bcc-b93a-3564ca88136d",
+          "track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc"
+        ]
+      }
+    },
+    "track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b": {
+      "trackId": "track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b",
+      "title": "Title7F",
+      "artist": {
+        "artistId": "artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6",
+        "name": "Brown"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 2838,
+      "rating": 0,
+      "location": "pathA",
+      "fileSizeInBytes": 289597,
+      "guestArtists": [],
+      "playCount": 98,
+      "originalAlbum": {
+        "albumId": "album-1697194157333-ecb1b89c-02a5-4ea8-9597-7736efde765d",
+        "name": "Back to Basics",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6",
+          "name": "Brown"
+        },
+        "tracks": [
+          "track-1697194157333-161b7847-5e32-4a92-bbc2-00a495ae18fd",
+          "track-1697194157333-07351ab8-68a7-447f-8af7-2ff0384c806c",
+          "track-1697194157333-cb6277b0-c890-414d-aa48-d744f6de8cb9",
+          "track-1697194157333-3ac99845-7d14-45ae-8a7b-c5bcba22259d",
+          "track-1697194157333-0ed75ce5-c8ae-416b-814c-7ad3dd66763a",
+          "track-1697194157333-dee4340f-5a42-4424-bd7b-46c1b83d6dd9",
+          "track-1697194157333-58734c09-5175-44c8-8a02-ebbbcdd2da83",
+          "track-1697194157333-e1e91d79-f9e3-4e73-be22-15f194a4def8",
+          "track-1697194157333-892f56c2-4880-4c78-8b53-6072825171c5",
+          "track-1697194157333-d498689f-6322-489d-81cb-3cde613384ba",
+          "track-1697194157333-9aacdaf4-4bc0-4628-93d5-25b2aac4347b",
+          "track-1697194157333-09ff39de-33f6-418b-8198-5f0477c00859",
+          "track-1697194157333-a79de046-e432-4ccb-afab-df0babb03913",
+          "track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b"
+        ]
+      }
+    },
+    "track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852": {
+      "trackId": "track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852",
+      "title": "Title1C",
+      "artist": {
+        "artistId": "artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977",
+        "name": "Thomas"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 3121,
+      "rating": 0,
+      "location": "pathA",
+      "fileSizeInBytes": 60617,
+      "guestArtists": [],
+      "playCount": 247,
+      "originalAlbum": {
+        "albumId": "album-1697194157330-168a2cd6-8cff-466e-8ba7-bf2a251ce264",
+        "name": "Songs of Love and Heartbreak",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977",
+          "name": "Thomas"
+        },
+        "tracks": [
+          "track-1697194157330-745c400c-726f-4445-9686-7deee1bfdc88",
+          "track-1697194157330-5d4f8b7d-61dd-44ea-a730-ce15c7d22901",
+          "track-1697194157330-9d7def0f-b5ed-4393-881d-c18d4f8bd335",
+          "track-1697194157330-4d13d2b3-0dba-4c5f-8486-2fa87ad118c2",
+          "track-1697194157330-82bfd2e1-7d16-4c1a-8fa3-b4336b97b103",
+          "track-1697194157330-9c7d54c6-8595-41db-b309-29a05da39f08",
+          "track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852"
+        ]
+      }
+    },
+    "track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1": {
+      "trackId": "track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1",
+      "title": "Title6D",
+      "artist": {
+        "artistId": "artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017",
+        "name": "Moore"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 3731,
+      "rating": 1,
+      "location": "pathB",
+      "fileSizeInBytes": 173790,
+      "guestArtists": [],
+      "playCount": 927,
+      "originalAlbum": {
+        "albumId": "album-1697194157330-d2a59e7a-c7ea-49a7-b96b-860e8c771576",
+        "name": "The Journey Begins",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017",
+          "name": "Moore"
+        },
+        "tracks": [
+          "track-1697194157330-3635eba3-1ffd-40e6-9784-0f040b4d953f",
+          "track-1697194157330-d9f0d713-6143-4b08-9ef2-82521773c9d1",
+          "track-1697194157330-db2af95a-ce15-45bf-b4f4-3ca839434d0b",
+          "track-1697194157331-9bb9b09c-9150-4b80-a5ce-dd798c8d1f10",
+          "track-1697194157331-f90daa44-ff3d-414d-9758-e49309a765c0",
+          "track-1697194157331-62b1672d-b505-47d3-9fe5-6b93c1101cb0",
+          "track-1697194157331-48b6a683-74a8-400d-b3d8-fdadc0466b79",
+          "track-1697194157331-8763bdac-7320-41c8-9b2d-04df1cfb8c32",
+          "track-1697194157331-f70ee36f-5ad4-4a10-8165-b453a6ff2cf8",
+          "track-1697194157331-f6bf0e72-9b2a-4fb2-ad90-d3fefa8370d1",
+          "track-1697194157331-53f7d1c8-32ee-4402-84cb-f808a3500b38",
+          "track-1697194157331-fe8ddccd-8f32-4a75-942b-46bc9cfc08f4",
+          "track-1697194157331-51db0d01-5056-4bea-b191-4030ca2382ae",
+          "track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1"
+        ]
+      }
+    },
+    "track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c": {
+      "trackId": "track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c",
+      "title": "Title6E",
+      "artist": {
+        "artistId": "artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96",
+        "name": "Wilson"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 1740,
+      "rating": 0,
+      "location": "pathA",
+      "fileSizeInBytes": 518187,
+      "guestArtists": [],
+      "playCount": 674,
+      "originalAlbum": {
+        "albumId": "album-1697194157331-6d56e299-cd1f-4ea8-9930-98bba43b736e",
+        "name": "Midnight Serenade",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96",
+          "name": "Wilson"
+        },
+        "tracks": [
+          "track-1697194157331-e3ec574e-dec7-46e7-a028-af1960649c28",
+          "track-1697194157331-c177e635-bada-456e-8e83-f4edb26873d7",
+          "track-1697194157331-82df5a3a-5f85-4b65-a4b1-494742e4a940",
+          "track-1697194157331-afecb10c-3592-4a24-8155-a05ea8a75266",
+          "track-1697194157331-3cc032ae-bfbf-49f5-a40c-c30f168c2388",
+          "track-1697194157331-45788756-763a-4af9-b9a7-1aef097840d4",
+          "track-1697194157331-525b630a-7eac-4e8d-8162-61aaa2e875f3",
+          "track-1697194157331-d9e49954-c60f-41e8-be53-a8716a300098",
+          "track-1697194157331-5e252058-ee75-4a4f-867d-ab5772232c84",
+          "track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c"
+        ]
+      }
+    },
+    "track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b": {
+      "trackId": "track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b",
+      "title": "Title1E",
+      "artist": {
+        "artistId": "artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da",
+        "name": "Brown"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 9036,
+      "rating": 0,
+      "location": "pathA",
+      "fileSizeInBytes": 714755,
+      "guestArtists": [],
+      "playCount": 888,
+      "originalAlbum": {
+        "albumId": "album-1697194157329-ad967911-df2c-4667-bf8e-2bfe05c555e7",
+        "name": "Greatest Hits",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da",
+          "name": "Brown"
+        },
+        "tracks": [
+          "track-1697194157329-21089b82-b730-4b54-9180-42d5052bc712",
+          "track-1697194157329-ba17b864-49bc-4d6b-adf7-cf13c03540c4",
+          "track-1697194157329-de9b6f5c-91c1-43e4-99fe-e759b64b3e77",
+          "track-1697194157329-32eecba6-0437-4f01-b418-d4cf73fa9c3e",
+          "track-1697194157329-f3e2efc6-a138-4b6b-9601-c7ca4045117a",
+          "track-1697194157329-817ff843-4b6d-4718-a56d-8b1cd7a8da90",
+          "track-1697194157329-bdc72d24-dcf4-4ced-91fc-f911d6b7576c",
+          "track-1697194157329-593a210b-89c4-4760-8f62-d5b268d7e1fb",
+          "track-1697194157330-8551d940-5783-4a83-8ba7-cb9192502aec",
+          "track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b"
+        ]
+      }
+    },
+    "track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507": {
+      "trackId": "track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507",
+      "title": "Title8E",
+      "artist": {
+        "artistId": "artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4",
+        "name": "Taylor"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 1682,
+      "rating": 2,
+      "location": "pathA",
+      "fileSizeInBytes": 212726,
+      "guestArtists": [],
+      "playCount": 479,
+      "originalAlbum": {
+        "albumId": "album-1697194157332-d13c5fec-9b02-4120-8ca4-1eed2f32e110",
+        "name": "Midnight Serenade",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4",
+          "name": "Taylor"
+        },
+        "tracks": [
+          "track-1697194157332-47c5d23b-9535-4c76-947d-8b3f52ffd2a3",
+          "track-1697194157332-ea4bf806-c24f-4746-ad39-4fd7444beb86",
+          "track-1697194157332-edeffa44-074d-479b-8093-258d1d6dc667",
+          "track-1697194157332-e09f8856-ac56-4c4a-93ae-91da0552dd34",
+          "track-1697194157332-5322dafc-ea2c-49a1-9381-78daa771c648",
+          "track-1697194157332-a85fa368-6dd5-4d62-8216-bfaa78b0e9f1",
+          "track-1697194157332-69d0bc88-6e77-4b41-b061-d96f4c8c8fc9",
+          "track-1697194157332-5cac0f8b-4870-4dd8-8f5c-7c84cf705d6a",
+          "track-1697194157332-8f697db4-6339-4188-bde8-86438fab7dc3",
+          "track-1697194157332-d1259237-b900-46da-b89a-e8c18d6375d9",
+          "track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507"
+        ]
+      }
+    },
+    "track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a": {
+      "trackId": "track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a",
+      "title": "Title2A",
+      "artist": {
+        "artistId": "artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d",
+        "name": "Johnson"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 424,
+      "rating": 2,
+      "location": "pathA",
+      "fileSizeInBytes": 949287,
+      "guestArtists": [],
+      "playCount": 843,
+      "originalAlbum": {
+        "albumId": "album-1697194157333-bbe8ea26-aaea-4ce1-bc8a-454bf037d9fa",
+        "name": "The Journey Begins",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d",
+          "name": "Johnson"
+        },
+        "tracks": [
+          "track-1697194157333-1ec27377-7a5f-4ae8-942e-9f6614a96690",
+          "track-1697194157333-b13048bf-5265-4085-8688-d18556ad46cc",
+          "track-1697194157333-328a488e-73b0-45a7-bc13-d8bcd1c66440",
+          "track-1697194157333-626bab83-426c-4509-bf7a-375dca944f0d",
+          "track-1697194157333-b4b1cc9c-ff9e-4ec5-98c6-b47b473f2600",
+          "track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a"
+        ]
+      }
+    },
+    "track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246": {
+      "trackId": "track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246",
+      "title": "Title2C",
+      "artist": {
+        "artistId": "artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0",
+        "name": "Wilson"
+      },
+      "date": "Oct 13, 2023, 11:49:17 AM",
+      "lengthInSeconds": 7807,
+      "rating": 3,
+      "location": "pathB",
+      "fileSizeInBytes": 530465,
+      "guestArtists": [],
+      "playCount": 399,
+      "originalAlbum": {
+        "albumId": "album-1697194157332-157e1ccc-2149-4447-8e98-e245ea2c7dae",
+        "name": "Greatest Hits",
+        "type": "COMMON_ALBUM",
+        "artist": {
+          "artistId": "artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0",
+          "name": "Wilson"
+        },
+        "tracks": [
+          "track-1697194157332-a13c3e7e-effc-4233-8ea1-97bdef1580e9",
+          "track-1697194157333-54d4e4d7-f41e-4b05-a6af-10e502c801f9",
+          "track-1697194157333-e958a918-20ce-465c-a453-ca7cc9b757ba",
+          "track-1697194157333-d9370344-b0cc-4eb5-a50b-b4a730b7d152",
+          "track-1697194157333-4b143d08-310a-405b-a21f-022024548543",
+          "track-1697194157333-d8842719-5356-42b8-9308-a2e4f299eb7b",
+          "track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246"
+        ]
+      }
+    }
+  },
+  "albums": {
+    "album-1697194157333-162bd194-6241-4670-bb27-1db8e529cd5d": {
+      "albumId": "album-1697194157333-162bd194-6241-4670-bb27-1db8e529cd5d",
+      "name": "Live in Newcastle",
+      "type": "COMMON_ALBUM",
+      "artist": {
+        "artistId": "artist-1697194157333-81878aba-a64f-4b9e-b6e6-4b9e5e737d79",
+        "name": "Smith"
+      },
+      "tracks": [
+        "track-1697194157333-a6552692-5447-41cf-8ab9-70ddf7297dbb",
+        "track-1697194157333-5ddd1cb3-6df5-4c7e-913d-0d83c530a35f",
+        "track-1697194157333-371314ae-2783-4b2f-bbf6-165325eb2e51",
+        "track-1697194157334-30ecd063-c56f-4a99-8252-835801263122",
+        "track-1697194157334-c5672b1a-17ed-41f8-89fa-9cc6789db4ee",
+        "track-1697194157334-87f709ba-f83b-4665-acba-3acfd5ac482d",
+        "track-1697194157334-5ff883cf-c2f7-4561-8245-06d84589775c"
+      ]
+    },
+    "album-1697194157316-2f91355a-956c-4a6b-a7ea-1bbeeb8637a5": {
+      "originalAlbums": {
+        "album-1697194157333-ecb1b89c-02a5-4ea8-9597-7736efde765d": {
+          "albumId": "album-1697194157333-ecb1b89c-02a5-4ea8-9597-7736efde765d",
+          "name": "Back to Basics",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6",
+            "name": "Brown"
+          },
+          "tracks": [
+            "track-1697194157333-161b7847-5e32-4a92-bbc2-00a495ae18fd",
+            "track-1697194157333-07351ab8-68a7-447f-8af7-2ff0384c806c",
+            "track-1697194157333-cb6277b0-c890-414d-aa48-d744f6de8cb9",
+            "track-1697194157333-3ac99845-7d14-45ae-8a7b-c5bcba22259d",
+            "track-1697194157333-0ed75ce5-c8ae-416b-814c-7ad3dd66763a",
+            "track-1697194157333-dee4340f-5a42-4424-bd7b-46c1b83d6dd9",
+            "track-1697194157333-58734c09-5175-44c8-8a02-ebbbcdd2da83",
+            "track-1697194157333-e1e91d79-f9e3-4e73-be22-15f194a4def8",
+            "track-1697194157333-892f56c2-4880-4c78-8b53-6072825171c5",
+            "track-1697194157333-d498689f-6322-489d-81cb-3cde613384ba",
+            "track-1697194157333-9aacdaf4-4bc0-4628-93d5-25b2aac4347b",
+            "track-1697194157333-09ff39de-33f6-418b-8198-5f0477c00859",
+            "track-1697194157333-a79de046-e432-4ccb-afab-df0babb03913",
+            "track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b"
+          ]
+        },
+        "album-1697194157331-6d56e299-cd1f-4ea8-9930-98bba43b736e": {
+          "albumId": "album-1697194157331-6d56e299-cd1f-4ea8-9930-98bba43b736e",
+          "name": "Midnight Serenade",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96",
+            "name": "Wilson"
+          },
+          "tracks": [
+            "track-1697194157331-e3ec574e-dec7-46e7-a028-af1960649c28",
+            "track-1697194157331-c177e635-bada-456e-8e83-f4edb26873d7",
+            "track-1697194157331-82df5a3a-5f85-4b65-a4b1-494742e4a940",
+            "track-1697194157331-afecb10c-3592-4a24-8155-a05ea8a75266",
+            "track-1697194157331-3cc032ae-bfbf-49f5-a40c-c30f168c2388",
+            "track-1697194157331-45788756-763a-4af9-b9a7-1aef097840d4",
+            "track-1697194157331-525b630a-7eac-4e8d-8162-61aaa2e875f3",
+            "track-1697194157331-d9e49954-c60f-41e8-be53-a8716a300098",
+            "track-1697194157331-5e252058-ee75-4a4f-867d-ab5772232c84",
+            "track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c"
+          ]
+        },
+        "album-1697194157330-d2a59e7a-c7ea-49a7-b96b-860e8c771576": {
+          "albumId": "album-1697194157330-d2a59e7a-c7ea-49a7-b96b-860e8c771576",
+          "name": "The Journey Begins",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017",
+            "name": "Moore"
+          },
+          "tracks": [
+            "track-1697194157330-3635eba3-1ffd-40e6-9784-0f040b4d953f",
+            "track-1697194157330-d9f0d713-6143-4b08-9ef2-82521773c9d1",
+            "track-1697194157330-db2af95a-ce15-45bf-b4f4-3ca839434d0b",
+            "track-1697194157331-9bb9b09c-9150-4b80-a5ce-dd798c8d1f10",
+            "track-1697194157331-f90daa44-ff3d-414d-9758-e49309a765c0",
+            "track-1697194157331-62b1672d-b505-47d3-9fe5-6b93c1101cb0",
+            "track-1697194157331-48b6a683-74a8-400d-b3d8-fdadc0466b79",
+            "track-1697194157331-8763bdac-7320-41c8-9b2d-04df1cfb8c32",
+            "track-1697194157331-f70ee36f-5ad4-4a10-8165-b453a6ff2cf8",
+            "track-1697194157331-f6bf0e72-9b2a-4fb2-ad90-d3fefa8370d1",
+            "track-1697194157331-53f7d1c8-32ee-4402-84cb-f808a3500b38",
+            "track-1697194157331-fe8ddccd-8f32-4a75-942b-46bc9cfc08f4",
+            "track-1697194157331-51db0d01-5056-4bea-b191-4030ca2382ae",
+            "track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1"
+          ]
+        },
+        "album-1697194157332-157e1ccc-2149-4447-8e98-e245ea2c7dae": {
+          "albumId": "album-1697194157332-157e1ccc-2149-4447-8e98-e245ea2c7dae",
+          "name": "Greatest Hits",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0",
+            "name": "Wilson"
+          },
+          "tracks": [
+            "track-1697194157332-a13c3e7e-effc-4233-8ea1-97bdef1580e9",
+            "track-1697194157333-54d4e4d7-f41e-4b05-a6af-10e502c801f9",
+            "track-1697194157333-e958a918-20ce-465c-a453-ca7cc9b757ba",
+            "track-1697194157333-d9370344-b0cc-4eb5-a50b-b4a730b7d152",
+            "track-1697194157333-4b143d08-310a-405b-a21f-022024548543",
+            "track-1697194157333-d8842719-5356-42b8-9308-a2e4f299eb7b",
+            "track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246"
+          ]
+        },
+        "album-1697194157318-9a1aad13-9e34-4b0e-a92f-bd00f29059b6": {
+          "albumId": "album-1697194157318-9a1aad13-9e34-4b0e-a92f-bd00f29059b6",
+          "name": "Reflections",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa",
+            "name": "Moore"
+          },
+          "tracks": [
+            "track-1697194157327-4bddde55-2622-42ac-a88b-f1d7912ec6cc",
+            "track-1697194157328-416f13de-5b47-440e-b0a0-1227b9188abf",
+            "track-1697194157328-46507da2-3ec8-4cd6-86ed-216784dd6ab1",
+            "track-1697194157328-99dae3f5-7415-4e9e-af25-9095cbe253f7",
+            "track-1697194157328-c9d97c2d-1069-442a-8219-f036afe167e5",
+            "track-1697194157328-79874f23-c0bd-4eba-9e00-1125b5947ec7",
+            "track-1697194157328-4d0c7f82-46fb-4c4c-a4d7-cf5bbdfcb8e5",
+            "track-1697194157328-171ea9e7-c3b5-4086-8846-ab0b1342b329",
+            "track-1697194157328-3e8acb3a-b0d2-48bb-9245-717eb679f1eb",
+            "track-1697194157329-40e25edb-3742-47a3-be72-f2661c33ad83",
+            "track-1697194157329-47730b81-3531-4b9a-8f56-b919e4feb6bb",
+            "track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665"
+          ]
+        },
+        "album-1697194157329-ad967911-df2c-4667-bf8e-2bfe05c555e7": {
+          "albumId": "album-1697194157329-ad967911-df2c-4667-bf8e-2bfe05c555e7",
+          "name": "Greatest Hits",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da",
+            "name": "Brown"
+          },
+          "tracks": [
+            "track-1697194157329-21089b82-b730-4b54-9180-42d5052bc712",
+            "track-1697194157329-ba17b864-49bc-4d6b-adf7-cf13c03540c4",
+            "track-1697194157329-de9b6f5c-91c1-43e4-99fe-e759b64b3e77",
+            "track-1697194157329-32eecba6-0437-4f01-b418-d4cf73fa9c3e",
+            "track-1697194157329-f3e2efc6-a138-4b6b-9601-c7ca4045117a",
+            "track-1697194157329-817ff843-4b6d-4718-a56d-8b1cd7a8da90",
+            "track-1697194157329-bdc72d24-dcf4-4ced-91fc-f911d6b7576c",
+            "track-1697194157329-593a210b-89c4-4760-8f62-d5b268d7e1fb",
+            "track-1697194157330-8551d940-5783-4a83-8ba7-cb9192502aec",
+            "track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b"
+          ]
+        },
+        "album-1697194157332-d13c5fec-9b02-4120-8ca4-1eed2f32e110": {
+          "albumId": "album-1697194157332-d13c5fec-9b02-4120-8ca4-1eed2f32e110",
+          "name": "Midnight Serenade",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4",
+            "name": "Taylor"
+          },
+          "tracks": [
+            "track-1697194157332-47c5d23b-9535-4c76-947d-8b3f52ffd2a3",
+            "track-1697194157332-ea4bf806-c24f-4746-ad39-4fd7444beb86",
+            "track-1697194157332-edeffa44-074d-479b-8093-258d1d6dc667",
+            "track-1697194157332-e09f8856-ac56-4c4a-93ae-91da0552dd34",
+            "track-1697194157332-5322dafc-ea2c-49a1-9381-78daa771c648",
+            "track-1697194157332-a85fa368-6dd5-4d62-8216-bfaa78b0e9f1",
+            "track-1697194157332-69d0bc88-6e77-4b41-b061-d96f4c8c8fc9",
+            "track-1697194157332-5cac0f8b-4870-4dd8-8f5c-7c84cf705d6a",
+            "track-1697194157332-8f697db4-6339-4188-bde8-86438fab7dc3",
+            "track-1697194157332-d1259237-b900-46da-b89a-e8c18d6375d9",
+            "track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507"
+          ]
+        },
+        "album-1697194157333-bbe8ea26-aaea-4ce1-bc8a-454bf037d9fa": {
+          "albumId": "album-1697194157333-bbe8ea26-aaea-4ce1-bc8a-454bf037d9fa",
+          "name": "The Journey Begins",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d",
+            "name": "Johnson"
+          },
+          "tracks": [
+            "track-1697194157333-1ec27377-7a5f-4ae8-942e-9f6614a96690",
+            "track-1697194157333-b13048bf-5265-4085-8688-d18556ad46cc",
+            "track-1697194157333-328a488e-73b0-45a7-bc13-d8bcd1c66440",
+            "track-1697194157333-626bab83-426c-4509-bf7a-375dca944f0d",
+            "track-1697194157333-b4b1cc9c-ff9e-4ec5-98c6-b47b473f2600",
+            "track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a"
+          ]
+        },
+        "album-1697194157332-0da4d37a-5e99-4087-8f2e-e59343b7a082": {
+          "albumId": "album-1697194157332-0da4d37a-5e99-4087-8f2e-e59343b7a082",
+          "name": "Reflections",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c",
+            "name": "Miller"
+          },
+          "tracks": [
+            "track-1697194157332-30693a8d-69ee-4913-9278-3458226ef385",
+            "track-1697194157332-5e82ff5e-f3bd-4f0f-97a6-8bcf6b3a2c98",
+            "track-1697194157332-7dea577d-ab28-48f5-a089-93fcf014491d",
+            "track-1697194157332-350b193e-6379-4472-bfad-6003b89a0fdf",
+            "track-1697194157332-cb2da206-cb41-4c9a-8018-9c8585a89372",
+            "track-1697194157332-1488cf94-948f-4fca-91c1-b5e9d31ec3fa",
+            "track-1697194157332-b629f44f-9626-4bc5-8f3e-abbd5984a9a4",
+            "track-1697194157332-58451636-b8da-4992-b421-1d7f870ac67b",
+            "track-1697194157332-376830d0-1448-4206-8a2d-63e9b704786d",
+            "track-1697194157332-1e9c0d13-162f-414f-8f85-c0eeec9b002d",
+            "track-1697194157332-9b2b0ac1-d7b3-49d3-bcb6-8cdee24cc8c5",
+            "track-1697194157332-882c9d96-0891-4855-9e9b-c3294b2ba4b6",
+            "track-1697194157332-0e7912eb-3ff9-4bcc-b93a-3564ca88136d",
+            "track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc"
+          ]
+        },
+        "album-1697194157330-168a2cd6-8cff-466e-8ba7-bf2a251ce264": {
+          "albumId": "album-1697194157330-168a2cd6-8cff-466e-8ba7-bf2a251ce264",
+          "name": "Songs of Love and Heartbreak",
+          "type": "COMMON_ALBUM",
+          "artist": {
+            "artistId": "artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977",
+            "name": "Thomas"
+          },
+          "tracks": [
+            "track-1697194157330-745c400c-726f-4445-9686-7deee1bfdc88",
+            "track-1697194157330-5d4f8b7d-61dd-44ea-a730-ce15c7d22901",
+            "track-1697194157330-9d7def0f-b5ed-4393-881d-c18d4f8bd335",
+            "track-1697194157330-4d13d2b3-0dba-4c5f-8486-2fa87ad118c2",
+            "track-1697194157330-82bfd2e1-7d16-4c1a-8fa3-b4336b97b103",
+            "track-1697194157330-9c7d54c6-8595-41db-b309-29a05da39f08",
+            "track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852"
+          ]
+        }
+      },
+      "artists": {
+        "artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96": {
+          "artistId": "artist-1697194157331-a948c6e5-9f35-4d29-a86e-c55d96d57e96",
+          "name": "Wilson"
+        },
+        "artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c": {
+          "artistId": "artist-1697194157332-39f33d57-3838-40de-a3e3-ce078b891c7c",
+          "name": "Miller"
+        },
+        "artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d": {
+          "artistId": "artist-1697194157333-6a459d71-967d-47e3-b5c8-7e259cd01d3d",
+          "name": "Johnson"
+        },
+        "artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa": {
+          "artistId": "artist-1697194157318-89c9d216-6cee-4300-a42b-66c88512a9fa",
+          "name": "Moore"
+        },
+        "artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4": {
+          "artistId": "artist-1697194157332-d5e51325-b768-4be8-b880-cb2dcbc742d4",
+          "name": "Taylor"
+        },
+        "artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6": {
+          "artistId": "artist-1697194157333-0a50e8d9-7665-496f-b750-0acd94fe46e6",
+          "name": "Brown"
+        },
+        "artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da": {
+          "artistId": "artist-1697194157329-d1c47107-91fc-4807-891f-397de61da5da",
+          "name": "Brown"
+        },
+        "artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0": {
+          "artistId": "artist-1697194157332-8a1cfb0e-e70c-46de-b562-041cecf20ca0",
+          "name": "Wilson"
+        },
+        "artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977": {
+          "artistId": "artist-1697194157330-9ba5ee3b-ba36-412b-9ed4-26fde0f21977",
+          "name": "Thomas"
+        },
+        "artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017": {
+          "artistId": "artist-1697194157330-72c9f504-2b60-47f3-b770-94b2af043017",
+          "name": "Moore"
+        }
+      },
+      "albumId": "album-1697194157316-2f91355a-956c-4a6b-a7ea-1bbeeb8637a5",
+      "name": "compilationAlbum4",
+      "type": "COMMON_ALBUM",
+      "artist": {
+        "artistId": "artist-1697194157316-01095c3b-407d-4e9f-9b76-5c874ced592a",
+        "name": "There is no artist"
+      },
+      "tracks": [
+        "track-1697194157329-500bc59e-11c4-4b7b-ad30-3c09ddb6d665",
+        "track-1697194157330-2c9361b5-de90-4b91-9295-ed12ed03da3b",
+        "track-1697194157330-a4b27076-1860-4553-81e8-ef82cd32c852",
+        "track-1697194157331-b2b3de1c-5922-4c9f-90dc-a79aff5699f1",
+        "track-1697194157331-f002ff17-260c-48bc-9eb2-6c4e9888b13c",
+        "track-1697194157332-6571bea2-3d76-44d6-9eee-e93842bb8507",
+        "track-1697194157332-18a526bf-db7e-4dff-929a-0cf0fe54b3cc",
+        "track-1697194157333-5b9203d5-aa86-4ffa-b5dd-76e281e87246",
+        "track-1697194157333-86b50e18-ac7c-40a2-a0c2-16cdad6da67b",
+        "track-1697194157333-0fd0947c-575e-4a9c-bdc4-7c11e98a177a"
+      ]
+    }
+  }
+}
