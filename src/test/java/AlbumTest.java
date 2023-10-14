@@ -13,13 +13,13 @@ import java.util.Random;
 
 public class AlbumTest {
     public static void main(String[] args) {
-        generateAlbumFromJson();
+        testAddTrack();
+//        generateAlbumFromJson();
     }
 
     public static void testAddTrack() {
         Album album = new Album("album");
         System.out.println(album);
-
 
         System.out.println("------------------");
         Artist artist = ArtistTest.generatAnArtist();

@@ -32,7 +32,7 @@ public class CompilationAlbum extends Album {
 
     @Override
     public void addTrack(MusicTrack track) {
-        tracks.add(track.getTrackId());
+        tracks.add(track.getTrackId() );
         originalAlbums.put(track.getOriginalAlbum().getAlbumId(), track.getOriginalAlbum());
         artists.put(track.getArtist().artistId, track.getArtist());
     }
