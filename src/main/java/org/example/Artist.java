@@ -1,11 +1,10 @@
 package org.example;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 /**
- * Represents an artist, including their name and membership to bands if appropriate.
+ * Represents an artist who is a soloist, in a band, or neither.
+ *
+ * @author Kun Lu
  */
 public class Artist implements Identifier {
     protected String artistId;
@@ -32,16 +31,29 @@ public class Artist implements Identifier {
     }
 
     /**
+     * Set the name of the artist
+     *
+     * @param name the new name of the arist
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
      * Returns a formatted string representation of the artist's information.
      *
-     * @return A formatted string representing the artist and their bands.
+     * @return A formatted string representing the artist.
      */
     @Override
     public String toString() {
-        StringBuilder artistInfo = new StringBuilder("Artist: " + name);
-        return artistInfo.toString();
+        return "Artist: " + name;
     }
 
+    /**
+     * Return a unique artistId to identify the artist.
+     *
+     * @return A formatted and random string representing the id of the id.
+     */
     @Override
     public String generateUniqueId() {
         String timestamp = Long.toString(System.currentTimeMillis());
@@ -50,6 +62,11 @@ public class Artist implements Identifier {
         return "artist-" + timestamp + "-" + randomUUID;
     }
 
+    /**
+     * Return the id of the artist.
+     *
+     * @return the id of the artist.
+     */
     public String getArtistId() {
         return artistId;
     }

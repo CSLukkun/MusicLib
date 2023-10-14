@@ -6,27 +6,28 @@ import java.util.UUID;
 
 
 /**
- * Represents an album with information such as name, type, artist, and a list of tracks.
+ * Represents an album with information such as albumId, name, type, artist, and a list of tracksId.
+ * <p>
+ * Album implement Interface Identifier because each album own a unique albumId.
+ * </p>
+ *
+ * @author Kun Lu
  */
 public class Album implements Identifier {
-
     protected String albumId;
     protected String name;
     protected AlbumType type;
     private Artist artist;
     protected ArrayList<String> tracks;
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
-
-    public Artist getArtist() {
-        return artist;
-    }
-
     /**
-     * Constructs an album with the given name, type, and artist.
+     * Constructs an album with the given name
+     * <p>
+     * when creating album object, you provide corresponding name, it will generate a unique albumId, a default artist named
+     * no name, a default type referred COMMON, and an arraylist of trackId
+     * </p>
      *
+     * @param name represent the name of the album
      */
     public Album(String name) {
         this.albumId = generateUniqueId();
@@ -36,6 +37,29 @@ public class Album implements Identifier {
         this.tracks = new ArrayList<>();
     }
 
+    /**
+     * set the artist of the album
+     *
+     * @param artist the artist issuing the artist
+     */
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    /**
+     * get the artist of the album
+     *
+     * @return the artist issuing the artist
+     */
+    public Artist getArtist() {
+        return artist;
+    }
+
+    /**
+     * get the id of the album
+     *
+     * @return the id of the album
+     */
     public String getAlbumId() {
         return albumId;
     }
@@ -47,12 +71,15 @@ public class Album implements Identifier {
      */
     public void addTrack(MusicTrack track) {
         tracks.add(track.getTrackId());
-        track.setOriginalAlbum(this);
-        artist = track.getArtist();
     }
 
+    /**
+     * Remove a music track to the album
+     *
+     * @param track the track to be removed
+     */
     public void removeTrack(MusicTrack track) {
-        tracks.remove(track);
+        tracks.remove(track.getTrackId());
     }
 
     /**

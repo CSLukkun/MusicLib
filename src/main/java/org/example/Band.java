@@ -1,34 +1,66 @@
 package org.example;
-
 import java.util.ArrayList;
-import java.util.List;
 
+/**
+ * Represent an Artist who is a band.
+ *
+ */
 public class Band extends Artist {
-    private List<Artist> members;
+    private ArrayList<Artist> members;
 
+    /**
+     * Construct a band object
+     *
+     * @param name the name of the band
+     */
     public Band(String name) {
         super(name);
         members = new ArrayList<>();
     }
 
+    /**
+     * Add an Artist in the band.
+     *
+     * @param member An artist in the band.
+     */
     public void addMember(Artist member) {
         members.add(member);
     }
+
+    /**
+     * Remove an Artist in the band
+     *
+     * @param artist An artist in the band
+     */
     public void removeMember(Artist artist) {
         members.remove(artist);
     }
 
-    public List<Artist> getMembers() {
+    /**
+     * Return all members in the band.
+     *
+     * @return all members in the band.
+     */
+    public ArrayList<Artist> getMembers() {
         return members;
     }
 
+    /**
+     * Return formatted string including band's name and band's members.
+     *
+     * @return A formatted string including band's name and band's members.
+     */
     @Override
     public String toString() {
-        StringBuilder artistInfo = new StringBuilder("Band: " + name + "\n" + "Members: " + "\n" + members);
-        return artistInfo.toString();
+        return "Band: " + name + "\n" + "Members: " + "\n" + members;
     }
 
 
+    /**
+     * Remove an artist in the band by artist id.
+     *
+     * @param id the id of the member included in the band
+     */
     public void removeMemberById(String id) {
         for (Artist artist : members) {
             if (artist.getArtistId().equals(id)) {

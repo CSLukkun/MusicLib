@@ -10,8 +10,7 @@ public class SoloistTest {
 
 
     public static Soloist generateAnSoloist() {
-        Soloist soloist = new Soloist(generateRandomName());
-        return soloist;
+        return new Soloist(generateRandomName());
     }
 
     public static String generateRandomName() {
