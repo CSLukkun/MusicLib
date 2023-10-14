@@ -8,44 +8,44 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class AlbumTest {
     public static void main(String[] args) {
-        testAddTrack();
-//        generateAlbumFromJson();
+       ArrayList<Album> albums = generateAlbumFromJson();
+
+       Album lastAlbum = albums.get(albums.size() - 1);
+       System.out.println(lastAlbum);
+
+       Artist artist = new Artist("Tom");
+       lastAlbum.setArtist(artist);
+
+       MusicTrack track = new MusicTrack("track 1");
+       track.setArtist(artist);
+
+       lastAlbum.addTrack(track);
+       System.out.println("---------");
+       System.out.println(lastAlbum);
+
+       System.out.println("---------");
+       System.out.println("albumId: " + lastAlbum.getAlbumId());
+       System.out.println("artistOfAlbum" + lastAlbum.getArtist());
+
+       ArrayList<MusicTrack> tracks = TracksTest.generateTracksFromJson();
+       for(MusicTrack v : tracks) {
+           lastAlbum.addTrack(v);
+       }
+
+
+
     }
 
-    public static void testAddTrack() {
-        Album album = new Album("album");
-        System.out.println(album);
-
-        System.out.println("------------------");
-        Artist artist = ArtistTest.generatAnArtist();
-        MusicTrack track = TracksTest.generateAMusicTrack(artist);
-        album.addTrack(track);
-        System.out.println(album);
-    }
-
-    public static void testRemoveTrack() {
-        Album album = new Album("album");
-        Artist artist = ArtistTest.generatAnArtist();
-        MusicTrack track = TracksTest.generateAMusicTrack(artist);
-        album.addTrack(track);
-        System.out.println(album);
-
-        System.out.println("------------------");
-        album.removeTrack(track);
-        System.out.println(album);
-    }
-
-    public static void generateAlbumFromJson() {
+    public static ArrayList<Album> generateAlbumFromJson() {
         String jsonFilePath = "src/main/resources/albums.json";
 
         try (FileReader fileReader = new FileReader(jsonFilePath)) {
 
-            Type albumListType = new TypeToken<List<Album>>() {}.getType();
+            Type albumListType = new TypeToken<ArrayList<Album>>() {}.getType();
 
             Gson gson = new GsonBuilder()
                     .setDateFormat("yyyy-MM-dd")
@@ -53,12 +53,12 @@ public class AlbumTest {
 
             ArrayList<Album> albums = gson.fromJson(fileReader, albumListType);
 
-            for (Album album : albums) {
-                System.out.println(album);
-            }
+            return albums;
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        return null;
     }
 
     public static Album generateAnAlbum() {

@@ -5,15 +5,17 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-public class MusicTrack implements Comparable<MusicTrack>,Identifier {
+/**
+ *
+ */
+public class MusicTrack implements Identifier {
     private String trackId;
     private String title;
     private Artist artist;
     private Date date;
-
     private int lengthInSeconds;
     private int rating;
-    private String location;
+    private String savingPath;
     private long fileSizeInBytes;
     private List<Artist> guestArtists;
     private int playCount;
@@ -31,14 +33,13 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
         this.date = null;
         this.lengthInSeconds = 0;
         this.rating = 0;
-        this.location = "";
+        this.savingPath = "";
         this.fileSizeInBytes = 0L;
         this.guestArtists = new ArrayList<>();
         this.playCount = 0;
         this.artist = new Artist("Unknown");
         this.originalAlbum = new Album("Unknown");
     }
-
 
     /**
      * Sets the release date of the track.
@@ -57,8 +58,6 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
     public Date getDate() {
         return date;
     }
-
-    // Add getters and setters for other attributes (length, rating, location, size)
 
     /**
      * Adds a guest artist to the track.
@@ -99,16 +98,33 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
         return playCount;
     }
 
-
+    /**
+     * Gets the rating of the track from 0 to 5.
+     *
+     * @return the rating of the track
+     */
     public int getRating() {
         return rating;
     }
 
+
+    /**
+     * Sets the rating of the track from 0 to 5.
+     *
+     * @param rating the rating of the track.
+     */
     public void setRating(int rating) {
+        if (rating > 5) {
+            rating = 5;
+        }
         this.rating = rating;
     }
 
-
+    /**
+     * Gets the title of the track.
+     *
+     * @return the title of the track.
+     */
     public String getTitle() {
         return title;
     }
@@ -131,65 +147,136 @@ public class MusicTrack implements Comparable<MusicTrack>,Identifier {
         this.originalAlbum = album;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    /**
+     * Sets the savingPath of the track.
+     *
+     * @param savingPath the specific savingPath of the track.
+     */
+    public void setSavingPath(String savingPath) {
+        this.savingPath = savingPath;
     }
 
-    public String getLocation() {
-        return location;
+    /**
+     * Gets the savingPath of the track.
+     *
+     * @return the savingPath of the track.
+     */
+    public String getSavingPath() {
+        return savingPath;
     }
 
+    /**
+     * Return the formatted string that includes the track's name, artist, original album name, release date, playtime,
+     * rating, save path,size, and play count.
+     *
+     * @return the formatted string.
+     */
     @Override
     public String toString() {
-        return  " TrackName: " + title  +
-                " , Artist: " + artist.name  +
-                " , originalAlbumName: " + getOriginalAlbum().name +
-                " , Date: " + date +
-                " , lengthInSeconds: " + lengthInSeconds +
-                " , Rating: " + rating +
-                " , Location: " + location +
-                " , fileSizeInBytes: " + fileSizeInBytes +
-                " , PlayCount: " + playCount +
-                "\n";
+        return  "\n" +
+                " TrackName: " + title  + "\n" +
+                " Artist: " + artist.name  + "\n" +
+                " originalAlbumName: " + getOriginalAlbum().name + "\n" +
+                " Date: " + date + "\n" +
+                " lengthInSeconds: " + lengthInSeconds + "\n" +
+                " Rating: " + rating + "\n" +
+                " SavingPath: " + savingPath + "\n" +
+                " fileSizeInBytes: " + fileSizeInBytes + "\n" +
+                " PlayCount: " + playCount + "\n";
     }
 
+    /**
+     * Sets the artist of the track.
+     *
+     * @param artist the artist to set in this track.
+     */
     public void setArtist(Artist artist) {
         this.artist = artist;
     }
 
+    /**
+     * Gets the artist of the track.
+     *
+     * @return the artist of the track.
+     */
     public Artist getArtist() {
         return artist;
     }
 
+    /**
+     * Set the track's play count.
+     *
+     * @param playCount the track's play count.
+     */
     public void setPlayCount(int playCount) {
         this.playCount = playCount;
     }
 
+    /**
+     * Get the size of the track in byte.
+     *
+     * @return the size of the track
+     */
     public long getFileSizeInBytes() {
         return fileSizeInBytes;
     }
 
+    /**
+     * Set the size of the track in byte.
+     *
+     * @param fileSizeInBytes the size of the track in byte.
+     */
     public void setFileSizeInBytes(long fileSizeInBytes) {
         this.fileSizeInBytes = fileSizeInBytes;
     }
 
+
+    /**
+     * Get the time of the track in second.
+     *
+     * @return the time of the track in seconds.
+     */
     public int getLengthInSeconds() {
         return lengthInSeconds;
     }
 
+    /**
+     * Set the time of the track in second.
+     *
+     * @param lengthInSeconds the time of the track.
+     */
     public void setLengthInSeconds(int lengthInSeconds) {
         this.lengthInSeconds = lengthInSeconds;
     }
 
+
+    /**
+     * Gets the id of the track.
+     *
+     * @return the id of the track.
+     */
     public String getTrackId() {
         return trackId;
     }
 
-    @Override
+
+    /**
+     * Compare the track with other track based on their titles.
+     *
+     * @param o The track to compare with
+     * @return A negative integer, zero, or a positive integer as this title is less than, equal to, or greater than the
+     * specified title.
+     */
     public int compareTo(MusicTrack o) {
         return this.title.compareTo(o.title);
     }
 
+    /**
+     * Generate a trackId for a track using a combination of current timestamp and a random uuid.
+     * The format of the unique ID is: "track-{currentTimestamp}-{randomUUID}"
+     *
+     * @return A unique ID string for the MusicTrack
+     */
     @Override
     public String generateUniqueId() {
         String timestamp = Long.toString(System.currentTimeMillis());

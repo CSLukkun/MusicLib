@@ -1,25 +1,43 @@
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import org.example.Album;
 import org.example.Artist;
 import org.example.MusicTrack;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-
 public class TracksTest {
 
     public static void main(String[] args) {
-        generateTracks();
+        ArrayList<MusicTrack> musicTracks = generateTracksFromJson();
+        System.out.println(musicTracks.get(0));
+
+        MusicTrack track = new MusicTrack("track 1");
+        musicTracks.add(track);
+
+        System.out.println(musicTracks.get(musicTracks.size() - 1));
+
+        track.setArtist(new Artist("Tom"));
+        track.setOriginalAlbum(new Album("Golden Life"));
+        track.setRating(3);
+        track.setPlayCount(100);
+        track.setDate(new Date());
+        track.setLengthInSeconds(300);
+        track.setSavingPath("pathA");
+        track.setFileSizeInBytes(5000);
+
+        System.out.println(musicTracks.get(musicTracks.size() - 1));
     }
 
-    public static void generateTracks() {
-        String jsonFilePath = "src/main/resources/tracks.json"; // Replace with the actual JSON file path
+    public static ArrayList<MusicTrack> generateTracksFromJson() {
+        String jsonFilePath = "src/main/resources/tracks.json";
 
         try (FileReader reader = new FileReader(jsonFilePath)) {
             Type musicTrackListType = new TypeToken<List<MusicTrack>>() {}.getType();
@@ -28,28 +46,19 @@ public class TracksTest {
                     .setDateFormat("yyyy-MM-dd")
                     .create();
 
-            List<MusicTrack> musicTracks = gson.fromJson(reader, musicTrackListType);
+            ArrayList<MusicTrack> musicTracks = gson.fromJson(reader, musicTrackListType);
 
-            for (MusicTrack musicTrack : musicTracks) {
-                System.out.println("Title: " + musicTrack.getTitle());
-                System.out.println("Artist: " + musicTrack.getArtist());
-                System.out.println("Date: " + musicTrack.getDate());
-                System.out.println("Length: " + musicTrack.getLengthInSeconds());
-                System.out.println("Rating: " + musicTrack.getRating());
-                System.out.println("Location: " + musicTrack.getLocation());
-                System.out.println("Size: " + musicTrack.getFileSizeInBytes());
-                System.out.println("Play Count: " + musicTrack.getPlayCount());
-                System.out.println();
-            }
+            return musicTracks;
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     public static MusicTrack generateAMusicTrack(Artist artist ) {
         String title = generateRandomTitle();
         int rating = new Random().nextInt(6);
-        String location = generateRandomLocation();
+        String savingPath = generateRandomSavingPath();
         int playCount = new Random().nextInt(1000);
 
         MusicTrack musicTrack = new MusicTrack(title);
@@ -57,7 +66,7 @@ public class TracksTest {
         musicTrack.setArtist(artist);
         musicTrack.setLengthInSeconds(generateRandomPlayingTime());
         musicTrack.setRating(rating);
-        musicTrack.setLocation(location);
+        musicTrack.setSavingPath(savingPath);
         musicTrack.setFileSizeInBytes(generateRandomSize());
         musicTrack.setPlayCount(playCount);
 
@@ -73,14 +82,13 @@ public class TracksTest {
         return new Random().nextInt(1000000);
     }
 
-
     public static String generateRandomTitle() {
         final String[] TITLES = {"Title1", "Title2", "Title3", "Title4", "Title5", "Title6", "Title7", "Title8", "Title9", "Title10"};
-        final String[] MODIFER = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
-        return TITLES[new Random().nextInt(TITLES.length)] + MODIFER[new Random().nextInt(MODIFER.length)];
+        final String[] MODIFIER = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
+        return TITLES[new Random().nextInt(TITLES.length)] + MODIFIER[new Random().nextInt(MODIFIER.length)];
     }
 
-    public static String generateRandomLocation() {
+    public static String generateRandomSavingPath() {
         final String[] LOCATIONS = {"pathA", "pathB"};
         return LOCATIONS[new Random().nextInt(LOCATIONS.length)];
     }
@@ -88,5 +96,4 @@ public class TracksTest {
     public static Date generateRandomDate() {
         return new Date();
     }
-
 }

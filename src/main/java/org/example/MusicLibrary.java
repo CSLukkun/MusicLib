@@ -2,11 +2,11 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.UUID;
 
 /**
  * Represents a music library that stores tracks and albums.
+ * Each library is identified by a unique id, a name, and has storage for tracks and albums
  */
 public class MusicLibrary implements Identifier {
     private String libId;
@@ -17,6 +17,8 @@ public class MusicLibrary implements Identifier {
 
     /**
      * Constructs a music library with empty lists of tracks and albums.
+     *
+     * @param name the name of the library.
      */
     public MusicLibrary(String name) {
         this.name = name;
@@ -69,6 +71,11 @@ public class MusicLibrary implements Identifier {
         return lowestRatedTracks;
     }
 
+    /**
+     * Generate a formatted string which includes a current timestamp and a randomUUID.
+     *
+     * @return the formatted string
+     */
     @Override
     public String generateUniqueId() {
         String timestamp = Long.toString(System.currentTimeMillis());
@@ -77,9 +84,13 @@ public class MusicLibrary implements Identifier {
         return "lib-" + timestamp + "-" + randomUUID;
     }
 
+    /**
+     * Return a formatted string including the lib's name, the lib's tracks, and the lib's albums.
+     *
+     * @return a formatted string.
+     */
     @Override
     public String toString() {
-        StringBuilder libraryInfo = new StringBuilder("Library: " + name + "\n" + "Tracks: " + "\n" + tracks + "\n" + "Albums: " + "\n" + albums);
-        return libraryInfo.toString();
+        return "Library: " + name + "\n" + "Tracks: " + "\n" + tracks + "\n" + "Albums: " + "\n" + albums;
     }
 }

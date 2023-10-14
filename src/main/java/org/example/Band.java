@@ -3,13 +3,13 @@ import java.util.ArrayList;
 
 /**
  * Represent an Artist who is a band.
- *
+ * Extend the Artist class with extra functionality such as handling with band member.
  */
 public class Band extends Artist {
     private ArrayList<Artist> members;
 
     /**
-     * Construct a band object
+     * Constructor of a band object
      *
      * @param name the name of the band
      */
@@ -24,6 +24,9 @@ public class Band extends Artist {
      * @param member An artist in the band.
      */
     public void addMember(Artist member) {
+        if (members.contains(member)) {
+            return;
+        }
         members.add(member);
     }
 

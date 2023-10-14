@@ -4,15 +4,16 @@ import java.util.*;
 
 /**
  * Represents a compilation album that may include tracks from various original albums.
+ * Extend the Album class with specific and additional function.
  */
 public class CompilationAlbum extends Album {
     private HashMap<String,Album> originalAlbums;
     private HashMap<String,Artist> artists;
 
     /**
-     * Constructs a compilation album with the given name, type, and artist.
+     * Constructor of a compilation album with the given name, type, and artist.
      *
-     * @param name    The name of the compilation album.
+     * @param name The name of the compilation album.
      */
     public CompilationAlbum(String name) {
         super(name);
@@ -29,7 +30,11 @@ public class CompilationAlbum extends Album {
         return new ArrayList<>(originalAlbums.values());
     }
 
-
+    /**
+     * Adds a specific track to the compilation album.
+     *
+     * @param track The track to be added.
+     */
     @Override
     public void addTrack(MusicTrack track) {
         tracks.add(track.getTrackId() );
@@ -37,9 +42,14 @@ public class CompilationAlbum extends Album {
         artists.put(track.getArtist().artistId, track.getArtist());
     }
 
+    /**
+     * Remove a specific track to the compilation album.
+     *
+     * @param track the track to be removed
+     */
     @Override
     public void removeTrack(MusicTrack track) {
-        tracks.remove(track);
+        tracks.remove(track.getTrackId());
         originalAlbums.remove(track.getTrackId());
         artists.remove(track.getArtist().artistId);
     }
@@ -53,10 +63,20 @@ public class CompilationAlbum extends Album {
         return artists;
     }
 
+    /**
+     * Gets the list of original Albums which have contributed tracks to the compilation album.
+     *
+     * @return The list of albums.
+     */
     public HashMap<String,Album> getOriginalAlbumsMap() {
         return originalAlbums;
     }
 
+    /**
+     * Return formatted string including compilation name and corresponding tracks.
+     *
+     * @return the formatted string.
+     */
     @Override
     public String toString() {
         return "AlbumName: " + name+ "\n" + "Tracks: " + "\n" + tracks;

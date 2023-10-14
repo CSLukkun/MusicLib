@@ -6,12 +6,12 @@
       "bandsIn": ["Band A"]
     },
     "date": "2022-01-01",
-    "length": 4.15,
+    "lengthInSeconds": 415,
     "rating": 4,
-    "location": "path/to/track_1.mp3",
-    "size": 567890,
+    "savingPath": "path/to/track_1.mp3",
+    "fileSizeInBytes": 567890,
     "playCount": 150,
-    "album": "Album A"
+    "originalAlbum": { "name": "Album A"}
   },
   {
     "title": "Track 2",
@@ -20,12 +20,12 @@
       "bandsIn": ["Band B"]
     },
     "date": "2022-03-15",
-    "length": 3.45,
+    "lengthInSeconds": 345,
     "rating": 5,
-    "location": "path/to/track_2.mp3",
-    "size": 789123,
+    "savingPath": "path/to/track_2.mp3",
+    "fileSizeInBytes": 789123,
     "playCount": 200,
-    "album": "Album B"
+    "originalAlbum": { "name": "Album B"}
   },
   {
     "title": "Track 3",
@@ -34,12 +34,12 @@
       "bandsIn": ["Band C"]
     },
     "date": "2022-07-22",
-    "length": 5.10,
+    "lengthInSeconds": 510,
     "rating": 3,
-    "location": "path/to/track_3.mp3",
-    "size": 654321,
+    "savingPath": "path/to/track_3.mp3",
+    "fileSizeInBytes": 654321,
     "playCount": 75,
-    "album": "Album C"
+    "originalAlbum": { "name": "Album C"}
   },
   {
     "title": "Track 4",
@@ -48,12 +48,12 @@
       "bandsIn": ["Band A", "Band D"]
     },
     "date": "2022-05-10",
-    "length": 4.30,
+    "lengthInSeconds": 430,
     "rating": 4,
-    "location": "path/to/track_4.mp3",
-    "size": 987654,
+    "savingPath": "path/to/track_4.mp3",
+    "fileSizeInBytes": 987654,
     "playCount": 120,
-    "album": "Album D"
+    "originalAlbum": { "name": "Album D"}
   },
   {
     "title": "Track 5",
@@ -62,12 +62,12 @@
       "bandsIn": ["Band E"]
     },
     "date": "2022-11-28",
-    "length": 3.55,
+    "lengthInSeconds": 355,
     "rating": 4,
-    "location": "path/to/track_5.mp3",
-    "size": 456789,
+    "savingPath": "path/to/track_5.mp3",
+    "fileSizeInBytes": 456789,
     "playCount": 180,
-    "album": "Album E"
+    "originalAlbum": { "name": "Album E"}
   },
   {
     "title": "Track 6",
@@ -76,12 +76,12 @@
       "bandsIn": ["Band F"]
     },
     "date": "2022-02-14",
-    "length": 4.00,
+    "lengthInSeconds": 400,
     "rating": 5,
-    "location": "path/to/track_6.mp3",
-    "size": 543210,
+    "savingPath": "path/to/track_6.mp3",
+    "fileSizeInBytes": 543210,
     "playCount": 220,
-    "album": "Album F"
+    "originalAlbum": { "name": "Album F"}
   },
   {
     "title": "Track 7",
@@ -90,12 +90,12 @@
       "bandsIn": ["Band G"]
     },
     "date": "2022-09-07",
-    "length": 4.50,
+    "lengthInSeconds": 450,
     "rating": 4,
-    "location": "path/to/track_7.mp3",
-    "size": 876543,
+    "savingPath": "path/to/track_7.mp3",
+    "fileSizeInBytes": 876543,
     "playCount": 90,
-    "album": "Album G"
+    "originalAlbum": { "name": "Album G"}
   },
   {
     "title": "Track 8",
@@ -104,12 +104,12 @@
       "bandsIn": ["Band H"]
     },
     "date": "2022-06-30",
-    "length": 3.20,
+    "lengthInSeconds": 320,
     "rating": 3,
-    "location": "path/to/track_8.mp3",
-    "size": 234567,
+    "savingPath": "path/to/track_8.mp3",
+    "fileSizeInBytes": 234567,
     "playCount": 50,
-    "album": "Album H"
+    "originalAlbum": { "name": "Album H"}
   },
   {
     "title": "Track 9",
@@ -118,12 +118,12 @@
       "bandsIn": ["Band A", "Band I"]
     },
     "date": "2022-12-05",
-    "length": 4.10,
+    "lengthInSecondsInSeconds": 410,
     "rating": 4,
-    "location": "path/to/track_9.mp3",
-    "size": 654321,
+    "savingPath": "path/to/track_9.mp3",
+    "fileSizeInBytes": 654321,
     "playCount": 110,
-    "album": "Album I"
+    "originalAlbum": { "name": "Album I"}
   },
   {
     "title": "Track 10",
@@ -132,11 +132,11 @@
       "bandsIn": ["Band J"]
     },
     "date": "2022-04-18",
-    "length": 3.40,
+    "lengthInSeconds": 340,
     "rating": 4,
-    "location": "path/to/track_10.mp3",
-    "size": 345678,
+    "savingPath": "path/to/track_10.mp3",
+    "fileSizeInBytes": 345678,
     "playCount": 160,
-    "album": "Album J"
+    "originalAlbum": { "name": "Album J"}
   }
 ]

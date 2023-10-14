@@ -1,43 +1,43 @@
 import org.example.Artist;
 import org.example.Band;
+import org.example.Soloist;
+
 import java.util.Random;
 
 public class BandTest {
 
-    public static void main(String args[]) {
-        removeMemberById();
-    }
+    public static void main(String[] args) {
 
-    public static void addMember() {
-        Band band = generateABand();
-        Artist artist = new Artist("John");
-        band.addMember(artist);
+        // Construct a band
+        Band band = new Band(generateRandomBandName());
         System.out.println(band);
-    }
 
-    public static void removeMember() {
-        Band band = generateABand();
-        Artist artist = new Artist("John");
-        band.addMember(artist);
-        System.out.println(band);
-        band.removeMember(artist);
-        System.out.println(band);
-    }
+        // Construct a artist Alice
+        Artist alice = new Artist("Alice");
 
-    public static void removeMemberById(){
-        Band band = generateABand();
-        Artist artist = new Artist("John");
-        Artist artist1 = new Artist("Tom");
-        band.addMember(artist);
-        band.addMember(artist1);
+        // Construct a soloist Bob
+        Soloist bob = new Soloist("Bob");
+
+        // This band add two artist
+        band.addMember(alice);
+        band.addMember(bob);
+
         System.out.println(band);
-        band.removeMemberById(artist.getArtistId());
+
+        // Remove alice
+        band.removeMember(alice);
+        System.out.println(band);
+
+        // Remove bob by artist id
+        band.removeMemberById(bob.getArtistId());
         System.out.println(band);
     }
 
-    public static Band generateABand() {
-        return new Band(generateRandomBandName());
-    }
+    /**
+     * Generate a band name.
+     *
+     * @return a random band name
+     */
     public static String generateRandomBandName() {
         final String[] ADJECTIVES = {"Rocking", "Electric", "Funky", "Groovy", "Epic", "Wild", "Sonic", "Awesome", "Soulful", "Mystic"};
         final String[] NOUNS = {"Journey", "Harmony", "Rhythm", "Beat", "Groove", "Vibes", "Melody", "Fusion", "Sound", "Jam"};

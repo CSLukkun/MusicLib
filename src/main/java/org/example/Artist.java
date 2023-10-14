@@ -3,6 +3,7 @@ import java.util.UUID;
 
 /**
  * Represents an artist who is a soloist, in a band, or neither.
+ * Implement the interface Identifier with a function generating a unique identifier.
  *
  * @author Kun Lu
  */

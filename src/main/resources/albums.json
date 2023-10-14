@@ -4,69 +4,79 @@
     "type": "Rock",
     "artist": {
       "name": "Queen"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Back in Black",
     "type": "Rock",
     "artist": {
       "name": "AC/DC"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "The Dark Side of the Moon",
     "type": "Progressive Rock",
     "artist": {
       "name": "Pink Floyd"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Thriller",
     "type": "Pop",
     "artist": {
       "name": "Michael Jackson"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Abbey Road",
     "type": "Rock",
     "artist": {
       "name": "The Beatles"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Hotel California",
     "type": "Rock",
     "artist": {
       "name": "Eagles"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Rumours",
     "type": "Rock",
     "artist": {
       "name": "Fleetwood Mac"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "The Wall",
     "type": "Progressive Rock",
     "artist": {
       "name": "Pink Floyd"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Led Zeppelin IV",
     "type": "Rock",
     "artist": {
       "name": "Led Zeppelin"
-    }
+    },
+    "tracks": []
   },
   {
     "name": "Nevermind",
     "type": "Grunge",
     "artist": {
       "name": "Nirvana"
-    }
+    },
+    "tracks": []
   }
 ]

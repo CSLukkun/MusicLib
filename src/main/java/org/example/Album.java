@@ -1,5 +1,4 @@
 package org.example;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.UUID;
@@ -7,9 +6,7 @@ import java.util.UUID;
 
 /**
  * Represents an album with information such as albumId, name, type, artist, and a list of tracksId.
- * <p>
- * Album implement Interface Identifier because each album own a unique albumId.
- * </p>
+ * Implementing the interface with a function generating a unique album id
  *
  * @author Kun Lu
  */
@@ -21,11 +18,9 @@ public class Album implements Identifier {
     protected ArrayList<String> tracks;
 
     /**
-     * Constructs an album with the given name
-     * <p>
+     * Constructor of an album with the given name
      * when creating album object, you provide corresponding name, it will generate a unique albumId, a default artist named
      * no name, a default type referred COMMON, and an arraylist of trackId
-     * </p>
      *
      * @param name represent the name of the album
      */
@@ -128,15 +123,30 @@ public class Album implements Identifier {
         return totalRating / tracks.size();
     }
 
+    /**
+     *  Sorts the list of tracks in ascending order by their names.
+     *
+     */
     public void sortTracksByName() {
         Collections.sort(tracks);
     }
 
+    /**
+     * Return A formatted String
+     *
+     * @return A formatted String including album's name and all tracks
+     */
     @Override
     public String toString() {
         return "AlbumName: " + name+ "\n" + "Tracks: " + "\n" + tracks;
     }
 
+
+    /**
+     * Return a unique identifier.
+     *
+     * @return a unique identifier.
+     */
     @Override
     public String generateUniqueId() {
         String timestamp = Long.toString(System.currentTimeMillis());
@@ -145,6 +155,11 @@ public class Album implements Identifier {
         return "album-" + timestamp + "-" + randomUUID;
     }
 
+    /**
+     * Gets ids of all tracks
+     *
+     * @return ids of all tracks
+     */
     public ArrayList<String> getTracks() {
         return tracks;
     }
