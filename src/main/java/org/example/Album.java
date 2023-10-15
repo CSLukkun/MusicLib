@@ -1,6 +1,5 @@
 package org.example;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.UUID;
 
 
@@ -15,7 +14,7 @@ public class Album implements Identifier {
     protected String name;
     protected AlbumType type;
     private Artist artist;
-    protected ArrayList<String> tracks;
+    protected ArrayList<MusicTrack> tracks;
 
     /**
      * Constructor of an album with the given name
@@ -65,7 +64,8 @@ public class Album implements Identifier {
      * @param track The track to be added.
      */
     public void addTrack(MusicTrack track) {
-        tracks.add(track.getTrackId());
+        tracks.add(track);
+        track.setOriginalAlbum(this);
     }
 
     /**
@@ -74,7 +74,7 @@ public class Album implements Identifier {
      * @param track the track to be removed
      */
     public void removeTrack(MusicTrack track) {
-        tracks.remove(track.getTrackId());
+        tracks.remove(track);
     }
 
     /**
@@ -82,7 +82,7 @@ public class Album implements Identifier {
      *
      * @return The total time of the album.
      */
-    public int getTotalTimeOfTracks(ArrayList<MusicTrack> tracks) {
+    public int getTotalTimeOfTracks() {
         int totalTimeOfTracks = 0;
 
         for (MusicTrack track : tracks) {
@@ -97,7 +97,7 @@ public class Album implements Identifier {
      *
      * @return The total file size of the album.
      */
-    public long getTotalFileSize(ArrayList<MusicTrack> tracks) {
+    public long getTotalFileSize() {
         long totalFileSize = 0;
         for (MusicTrack track : tracks) {
             totalFileSize += track.getFileSizeInBytes();
@@ -110,7 +110,7 @@ public class Album implements Identifier {
      *
      * @return The average rating of the album's tracks.
      */
-    public double getAverageRating(ArrayList<MusicTrack> tracks) {
+    public double getAverageRating() {
         if (tracks.isEmpty()) {
             return 0.0;
         }
@@ -120,15 +120,9 @@ public class Album implements Identifier {
             totalRating += track.getRating();
         }
 
-        return totalRating / tracks.size();
-    }
-
-    /**
-     *  Sorts the list of tracks in ascending order by their names.
-     *
-     */
-    public void sortTracksByName() {
-        Collections.sort(tracks);
+        // Keep two decimal places for data of type double.
+        double value = totalRating / tracks.size();
+        return Math.round(value * 100.0) / 100.0 ;
     }
 
     /**
@@ -160,7 +154,7 @@ public class Album implements Identifier {
      *
      * @return ids of all tracks
      */
-    public ArrayList<String> getTracks() {
+    public ArrayList<MusicTrack> getTracks() {
         return tracks;
     }
 }

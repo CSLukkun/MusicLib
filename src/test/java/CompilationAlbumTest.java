@@ -19,22 +19,24 @@ public class CompilationAlbumTest {
 
         for (int i = 0; i < size; i++) {
             Artist artist = ArtistTest.generatAnArtist();
-            Album album = AlbumTest.generateAnAlbum();
-            MusicTrack track = TracksTest.generateAMusicTrack(artist);
+            Album album = new Album("Album " + i);
+            album.setArtist(artist);
+            MusicTrack track = new MusicTrack("Track " + i);
+            track.setArtist(artist);
             album.addTrack(track);
-
             compilationAlbum.addTrack(track);
         }
 
-        System.out.println(compilationAlbum.getArtists());
-        System.out.println(compilationAlbum.getOriginalAlbums());
+        System.out.println("There are artist in this album: " + compilationAlbum.getArtists().values());
+        System.out.println("There are albums in this album: " + compilationAlbum.getOriginalAlbums());
     }
 
     public static void testAddTracksFromOneAlbum() {
         final int size = 10;
         CompilationAlbum compilationAlbum = generateCompilationAlbum();
-        Album album = AlbumTest.generateAnAlbum();
+        Album album = new Album("Album 1");
         Artist artist = ArtistTest.generatAnArtist();
+        album.setArtist(artist);
 
         for (int i = 0; i < size; i++) {
             MusicTrack track = TracksTest.generateAMusicTrack(artist);

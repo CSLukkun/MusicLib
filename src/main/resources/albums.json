@@ -1,21 +1,6 @@
 [
   {
-    "name": "A Night at the Opera",
-    "type": "Rock",
-    "artist": {
-      "name": "Queen"
-    },
-    "tracks": []
-  },
-  {
-    "name": "Back in Black",
-    "type": "Rock",
-    "artist": {
-      "name": "AC/DC"
-    },
-    "tracks": []
-  },
-  {
+    "albumId": "track-1697206451597-0629e6d7-104a-43d8-998b-4cf45981cd58",
     "name": "The Dark Side of the Moon",
     "type": "Progressive Rock",
     "artist": {
@@ -24,22 +9,7 @@
     "tracks": []
   },
   {
-    "name": "Thriller",
-    "type": "Pop",
-    "artist": {
-      "name": "Michael Jackson"
-    },
-    "tracks": []
-  },
-  {
-    "name": "Abbey Road",
-    "type": "Rock",
-    "artist": {
-      "name": "The Beatles"
-    },
-    "tracks": []
-  },
-  {
+    "albumId": "track-1697206451598-0629e6d8-104a-43d8-998b-4cf45981cd59",
     "name": "Hotel California",
     "type": "Rock",
     "artist": {
@@ -48,6 +18,52 @@
     "tracks": []
   },
   {
+    "albumId": "track-1697206451599-0629e6d9-104a-43d8-998b-4cf45981cd60",
+    "name": "Thriller",
+    "type": "Pop",
+    "artist": {
+      "name": "Michael Jackson"
+    },
+    "tracks": []
+  },
+  {
+    "albumId": "track-1697206451600-0629e6da-104a-43d8-998b-4cf45981cd61",
+    "name": "Back in Black",
+    "type": "Hard Rock",
+    "artist": {
+      "name": "AC/DC"
+    },
+    "tracks": []
+  },
+  {
+    "albumId": "track-1697206451601-0629e6db-104a-43d8-998b-4cf45981cd62",
+    "name": "Abbey Road",
+    "type": "Rock",
+    "artist": {
+      "name": "The Beatles"
+    },
+    "tracks": []
+  },
+  {
+    "albumId": "track-1697206451602-0629e6dc-104a-43d8-998b-4cf45981cd63",
+    "name": "Born to Run",
+    "type": "Rock",
+    "artist": {
+      "name": "Bruce Springsteen"
+    },
+    "tracks": []
+  },
+  {
+    "albumId": "track-1697206451603-0629e6dd-104a-43d8-998b-4cf45981cd64",
+    "name": "Nevermind",
+    "type": "Grunge",
+    "artist": {
+      "name": "Nirvana"
+    },
+    "tracks": []
+  },
+  {
+    "albumId": "track-1697206451604-0629e6de-104a-43d8-998b-4cf45981cd65",
     "name": "Rumours",
     "type": "Rock",
     "artist": {
@@ -56,26 +72,20 @@
     "tracks": []
   },
   {
-    "name": "The Wall",
-    "type": "Progressive Rock",
-    "artist": {
-      "name": "Pink Floyd"
-    },
-    "tracks": []
-  },
-  {
-    "name": "Led Zeppelin IV",
+    "albumId": "track-1697206451605-0629e6df-104a-43d8-998b-4cf45981cd66",
+    "name": "The Joshua Tree",
     "type": "Rock",
     "artist": {
-      "name": "Led Zeppelin"
+      "name": "U2"
     },
     "tracks": []
   },
   {
-    "name": "Nevermind",
-    "type": "Grunge",
+    "albumId": "track-1697206451606-0629e6e0-104a-43d8-998b-4cf45981cd67",
+    "name": "Purple Rain",
+    "type": "Pop",
     "artist": {
-      "name": "Nirvana"
+      "name": "Prince"
     },
     "tracks": []
   }

@@ -37,13 +37,36 @@ public class MusicLibrary implements Identifier {
     }
 
     /**
+     * Removes a music track to the library.
+     *
+     * @param track The track to be removed.
+     */
+    public void removeTrack(MusicTrack track) {
+        tracks.remove(track.getTrackId());
+    }
+
+    /**
      * Adds an album to the library.
+     * Adds all tracks in the album into the library
      *
      * @param album The album to be added.
      */
     public void addAlbum(Album album) {
         albums.put(album.getAlbumId(), album);
+        album.getTracks().forEach(track -> this.addTrack(track));
     }
+
+    /**
+     * Removes an album in the library.
+     * Removes all tracks of the album into the library
+     *
+     * @param album The album to be added.
+     */
+    public void removeAlbum(Album album) {
+        albums.put(album.getAlbumId(), album);
+        album.getTracks().forEach(track -> this.removeTrack(track));
+    }
+
 
     /**
      * Creates and returns a list of tracks with the lowest rating in the library.
@@ -70,6 +93,15 @@ public class MusicLibrary implements Identifier {
 
         return lowestRatedTracks;
     }
+
+    public HashMap<String,MusicTrack> getAllTracks() {
+        return tracks;
+    }
+
+    public HashMap<String, Album> getAllAlbums() {
+        return albums;
+    }
+
 
     /**
      * Generate a formatted string which includes a current timestamp and a randomUUID.

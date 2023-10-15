@@ -47,7 +47,7 @@ public class Artist implements Identifier {
      */
     @Override
     public String toString() {
-        return "Artist: " + name;
+        return "\n" + "Artist: " + name;
     }
 
     /**

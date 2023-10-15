@@ -22,15 +22,16 @@ public class BandTest {
         band.addMember(alice);
         band.addMember(bob);
 
-        System.out.println(band);
+        // Print all members in the band
+        System.out.println("All members in the band is " + band.getMembers());
 
         // Remove alice
         band.removeMember(alice);
-        System.out.println(band);
+        System.out.println("All members in the band is " + band.getMembers());
 
         // Remove bob by artist id
         band.removeMemberById(bob.getArtistId());
-        System.out.println(band);
+        System.out.println("All members in the band is " + band.getMembers());
     }
 
     /**

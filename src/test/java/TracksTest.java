@@ -16,9 +16,12 @@ import java.util.Random;
 public class TracksTest {
 
     public static void main(String[] args) {
+
+        // Generate a set of tracks from a json file
         ArrayList<MusicTrack> musicTracks = generateTracksFromJson();
         System.out.println(musicTracks.get(0));
 
+        // Create a track object
         MusicTrack track = new MusicTrack("track 1");
         musicTracks.add(track);
 
@@ -46,9 +49,7 @@ public class TracksTest {
                     .setDateFormat("yyyy-MM-dd")
                     .create();
 
-            ArrayList<MusicTrack> musicTracks = gson.fromJson(reader, musicTrackListType);
-
-            return musicTracks;
+            return gson.fromJson(reader, musicTrackListType);
         } catch (IOException e) {
             e.printStackTrace();
         }

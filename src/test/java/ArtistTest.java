@@ -9,11 +9,16 @@ import java.util.List;
 
 public class ArtistTest {
     public static void main(String[] args) {
+
+       // Generate a set of artist from json file
        ArrayList<Artist> artists = generateArtistsFromJson();
        System.out.println(artists);
 
-        artists.get(0).setName("Tom");
-        System.out.println(artists);
+       // Set the first artist name "Tom"
+       System.out.println("The first artist's name is " + artists.get(0).getName());
+       artists.get(0).setName("Tom");
+       System.out.println("The first artist's name is " + artists.get(0).getName());
+
     }
 
     public static ArrayList<Artist> generateArtistsFromJson() {

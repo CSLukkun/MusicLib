@@ -1,142 +1,137 @@
 [
   {
-    "title": "Track 1",
-    "artist": {
-      "name": "John Smith",
-      "bandsIn": ["Band A"]
-    },
-    "date": "2022-01-01",
-    "lengthInSeconds": 415,
-    "rating": 4,
-    "savingPath": "path/to/track_1.mp3",
-    "fileSizeInBytes": 567890,
-    "playCount": 150,
-    "originalAlbum": { "name": "Album A"}
-  },
-  {
+    "trackId": "track-1697206451597-0629e6d7-104a-43d8-998b-4cf45981cd58",
     "title": "Track 2",
     "artist": {
       "name": "Jane Doe",
       "bandsIn": ["Band B"]
     },
-    "date": "2022-03-15",
-    "lengthInSeconds": 345,
+    "date": "2022-02-01",
+    "lengthInSeconds": 320,
     "rating": 5,
     "savingPath": "path/to/track_2.mp3",
-    "fileSizeInBytes": 789123,
-    "playCount": 200,
+    "fileSizeInBytes": 678901,
+    "playCount": 120,
     "originalAlbum": { "name": "Album B"}
   },
   {
+    "trackId": "track-1697206451598-0629e6d8-104a-43d8-998b-4cf45981cd59",
     "title": "Track 3",
     "artist": {
-      "name": "Mike Johnson",
+      "name": "Alice Brown",
       "bandsIn": ["Band C"]
     },
-    "date": "2022-07-22",
-    "lengthInSeconds": 510,
+    "date": "2022-03-01",
+    "lengthInSeconds": 385,
     "rating": 3,
     "savingPath": "path/to/track_3.mp3",
-    "fileSizeInBytes": 654321,
-    "playCount": 75,
+    "fileSizeInBytes": 789012,
+    "playCount": 200,
     "originalAlbum": { "name": "Album C"}
   },
   {
+    "trackId": "track-1697206451599-0629e6d9-104a-43d8-998b-4cf45981cd60",
     "title": "Track 4",
     "artist": {
-      "name": "Emily Brown",
-      "bandsIn": ["Band A", "Band D"]
+      "name": "Charlie Day",
+      "bandsIn": ["Band D"]
     },
-    "date": "2022-05-10",
-    "lengthInSeconds": 430,
+    "date": "2022-04-01",
+    "lengthInSeconds": 412,
     "rating": 4,
     "savingPath": "path/to/track_4.mp3",
-    "fileSizeInBytes": 987654,
-    "playCount": 120,
+    "fileSizeInBytes": 890123,
+    "playCount": 130,
     "originalAlbum": { "name": "Album D"}
   },
   {
+    "trackId": "track-1697206451600-0629e6da-104a-43d8-998b-4cf45981cd61",
     "title": "Track 5",
     "artist": {
-      "name": "David Wilson",
+      "name": "David Earl",
       "bandsIn": ["Band E"]
     },
-    "date": "2022-11-28",
-    "lengthInSeconds": 355,
-    "rating": 4,
+    "date": "2022-05-01",
+    "lengthInSeconds": 300,
+    "rating": 3,
     "savingPath": "path/to/track_5.mp3",
-    "fileSizeInBytes": 456789,
-    "playCount": 180,
+    "fileSizeInBytes": 901234,
+    "playCount": 210,
     "originalAlbum": { "name": "Album E"}
   },
   {
+    "trackId": "track-1697206451601-0629e6db-104a-43d8-998b-4cf45981cd62",
     "title": "Track 6",
     "artist": {
-      "name": "Sarah Davis",
+      "name": "Emily Fields",
       "bandsIn": ["Band F"]
     },
-    "date": "2022-02-14",
-    "lengthInSeconds": 400,
+    "date": "2022-06-01",
+    "lengthInSeconds": 398,
     "rating": 5,
     "savingPath": "path/to/track_6.mp3",
-    "fileSizeInBytes": 543210,
-    "playCount": 220,
+    "fileSizeInBytes": 912345,
+    "playCount": 240,
     "originalAlbum": { "name": "Album F"}
   },
   {
+    "trackId": "track-1697206451602-0629e6dc-104a-43d8-998b-4cf45981cd63",
     "title": "Track 7",
     "artist": {
-      "name": "Chris Evans",
+      "name": "Frank Green",
       "bandsIn": ["Band G"]
     },
-    "date": "2022-09-07",
-    "lengthInSeconds": 450,
+    "date": "2022-07-01",
+    "lengthInSeconds": 355,
     "rating": 4,
     "savingPath": "path/to/track_7.mp3",
-    "fileSizeInBytes": 876543,
-    "playCount": 90,
+    "fileSizeInBytes": 923456,
+    "playCount": 190,
     "originalAlbum": { "name": "Album G"}
   },
   {
+    "trackId": "track-1697206451603-0629e6dd-104a-43d8-998b-4cf45981cd64",
     "title": "Track 8",
     "artist": {
-      "name": "Olivia White",
+      "name": "Grace Hill",
       "bandsIn": ["Band H"]
     },
-    "date": "2022-06-30",
-    "lengthInSeconds": 320,
+    "date": "2022-08-01",
+    "lengthInSeconds": 376,
     "rating": 3,
     "savingPath": "path/to/track_8.mp3",
-    "fileSizeInBytes": 234567,
-    "playCount": 50,
+    "fileSizeInBytes": 934567,
+    "playCount": 160,
     "originalAlbum": { "name": "Album H"}
   },
   {
+    "trackId": "track-1697206451604-0629e6de-104a-43d8-998b-4cf45981cd65",
     "title": "Track 9",
     "artist": {
-      "name": "Michael Brown",
-      "bandsIn": ["Band A", "Band I"]
+      "name": "Henry Isaac",
+      "bandsIn": ["Band I"]
     },
-    "date": "2022-12-05",
-    "lengthInSecondsInSeconds": 410,
+    "date": "2022-09-01",
+    "lengthInSeconds": 391,
     "rating": 4,
     "savingPath": "path/to/track_9.mp3",
-    "fileSizeInBytes": 654321,
-    "playCount": 110,
+    "fileSizeInBytes": 945678,
+    "playCount": 180,
     "originalAlbum": { "name": "Album I"}
   },
   {
+    "trackId": "track-1697206451605-0629e6df-104a-43d8-998b-4cf45981cd66",
     "title": "Track 10",
     "artist": {
-      "name": "Emma Taylor",
+      "name": "Isabella James",
       "bandsIn": ["Band J"]
     },
-    "date": "2022-04-18",
-    "lengthInSeconds": 340,
-    "rating": 4,
+    "date": "2022-10-01",
+    "lengthInSeconds": 365,
+    "rating": 5,
     "savingPath": "path/to/track_10.mp3",
-    "fileSizeInBytes": 345678,
-    "playCount": 160,
+    "fileSizeInBytes": 956789,
+    "playCount": 170,
     "originalAlbum": { "name": "Album J"}
   }
 ]

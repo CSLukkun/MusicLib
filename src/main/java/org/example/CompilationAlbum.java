@@ -37,7 +37,7 @@ public class CompilationAlbum extends Album {
      */
     @Override
     public void addTrack(MusicTrack track) {
-        tracks.add(track.getTrackId() );
+        tracks.add(track);
         originalAlbums.put(track.getOriginalAlbum().getAlbumId(), track.getOriginalAlbum());
         artists.put(track.getArtist().artistId, track.getArtist());
     }
@@ -49,7 +49,7 @@ public class CompilationAlbum extends Album {
      */
     @Override
     public void removeTrack(MusicTrack track) {
-        tracks.remove(track.getTrackId());
+        tracks.remove(track);
         originalAlbums.remove(track.getTrackId());
         artists.remove(track.getArtist().artistId);
     }
