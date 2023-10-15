@@ -16,7 +16,7 @@ public class MusicTrack implements Identifier {
     private int lengthInSeconds;
     private int rating;
     private String savingPath;
-    private long fileSizeInBytes;
+    private int fileSizeInBytes;
     private List<Artist> guestArtists;
     private int playCount;
 
@@ -34,7 +34,7 @@ public class MusicTrack implements Identifier {
         this.lengthInSeconds = 0;
         this.rating = 0;
         this.savingPath = "";
-        this.fileSizeInBytes = 0L;
+        this.fileSizeInBytes = 0;
         this.guestArtists = new ArrayList<>();
         this.playCount = 0;
         this.artist = new Artist("Unknown");
@@ -217,7 +217,7 @@ public class MusicTrack implements Identifier {
      *
      * @return the size of the track
      */
-    public long getFileSizeInBytes() {
+    public int getFileSizeInBytes() {
         return fileSizeInBytes;
     }
 
@@ -226,7 +226,7 @@ public class MusicTrack implements Identifier {
      *
      * @param fileSizeInBytes the size of the track in byte.
      */
-    public void setFileSizeInBytes(long fileSizeInBytes) {
+    public void setFileSizeInBytes(int fileSizeInBytes) {
         this.fileSizeInBytes = fileSizeInBytes;
     }
 

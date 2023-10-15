@@ -4,6 +4,9 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 public class LibraryTest {
     public static void main(String[] args) {
@@ -35,6 +38,10 @@ public class LibraryTest {
 
         saveToStringToFile("library.txt", String.valueOf(library));
         saveToJsonToFile("library.json", library);
+
+        // Test backing up
+        testBackUpBinPacking();
+        saveToStringToFile("backupStrategy.txt", testBackUpBinPacking());
     }
 
     public static void saveToStringToFile(String filename, String data) {
@@ -58,5 +65,28 @@ public class LibraryTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String testBackUpBinPacking() {
+        MusicLibrary lib = new MusicLibrary("lib");
+
+        for (int i = 0; i < 10; i++) {
+            MusicTrack track = new MusicTrack("track " + i);
+            track.setFileSizeInBytes(new Random().nextInt(10000) + 500);
+            lib.addTrack(track);
+        }
+
+
+        List<Disc> discs = lib.backUpTracksOnDisc(10000 + 500);
+        System.out.println(discs);
+
+        List<MusicTrack> tracksArrayList = new ArrayList<>(lib.getAllTracks().values());
+
+        tracksArrayList.sort((s1,s2) -> Integer.compare(s2.getFileSizeInBytes(), s1.getFileSizeInBytes()));
+        return "The size of track in descending: " +
+                (tracksArrayList.stream().map(v -> v.getFileSizeInBytes()).collect(Collectors.toList()))
+                + "\n You need " + discs.size() + "discs"
+                + "\n" + String.valueOf(discs);
+
     }
 }

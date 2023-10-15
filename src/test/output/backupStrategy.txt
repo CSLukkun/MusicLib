@@ -1,0 +1,117 @@
+The size of track in descending: [9536, 8897, 8812, 7205, 5107, 4470, 4014, 3996, 3039, 2887]
+ You need 7discs
+[
+This disc includes the following tracks: [
+ TrackName: track 0
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 9536
+ PlayCount: 0
+]
+-----------------------------------------------------------, 
+This disc includes the following tracks: [
+ TrackName: track 4
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 8897
+ PlayCount: 0
+]
+-----------------------------------------------------------, 
+This disc includes the following tracks: [
+ TrackName: track 2
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 8812
+ PlayCount: 0
+]
+-----------------------------------------------------------, 
+This disc includes the following tracks: [
+ TrackName: track 7
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 7205
+ PlayCount: 0
+, 
+ TrackName: track 9
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 3039
+ PlayCount: 0
+]
+-----------------------------------------------------------, 
+This disc includes the following tracks: [
+ TrackName: track 5
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 5107
+ PlayCount: 0
+, 
+ TrackName: track 3
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 4470
+ PlayCount: 0
+]
+-----------------------------------------------------------, 
+This disc includes the following tracks: [
+ TrackName: track 1
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 4014
+ PlayCount: 0
+, 
+ TrackName: track 6
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 3996
+ PlayCount: 0
+]
+-----------------------------------------------------------, 
+This disc includes the following tracks: [
+ TrackName: track 8
+ Artist: Unknown
+ originalAlbumName: Unknown
+ Date: null
+ lengthInSeconds: 0
+ Rating: 0
+ SavingPath: 
+ fileSizeInBytes: 2887
+ PlayCount: 0
+]
+-----------------------------------------------------------]

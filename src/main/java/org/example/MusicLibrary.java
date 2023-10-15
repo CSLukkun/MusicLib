@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -124,5 +125,36 @@ public class MusicLibrary implements Identifier {
     @Override
     public String toString() {
         return "Library: " + name + "\n" + "Tracks: " + "\n" + tracks + "\n" + "Albums: " + "\n" + albums;
+    }
+
+    public List<Disc> backUpTracksOnDisc(int discCapacity) {
+        List<MusicTrack> tracksArrayList = new ArrayList<>(tracks.values());
+
+        // 1. Sort the tracks in decreasing order of size
+        tracksArrayList.sort((t1, t2) -> Integer.compare(t2.getFileSizeInBytes(), t1.getFileSizeInBytes()));
+
+        List<Disc> discs = new ArrayList<>();
+
+        // 2. For each track
+        for (MusicTrack track : tracksArrayList) {
+            boolean placed = false;
+
+            // 3. Try to place it in the first disc where it fits
+            for (Disc disc : discs) {
+                if (disc.canFit(track)) {
+                    disc.addTrack(track);
+                    placed = true;
+                    break;
+                }
+            }
+
+            // If it doesn't fit in any current disc, create a new disc and place the track in it
+            if (!placed) {
+                Disc newDisc = new Disc(discCapacity);
+                newDisc.addTrack(track);
+                discs.add(newDisc);
+            }
+        }
+        return discs;
     }
 }
