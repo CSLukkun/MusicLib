@@ -8,10 +8,32 @@ import java.util.Random;
 public class CompilationAlbumTest {
 
     public static void main(String[] args) {
-        testAddTracksFromOneAlbum();
-        testAddDifferentTracks();
+//        testAddTracksFromOneAlbum();
+//        testAddDifferentTracks();
+
+        testTracksInCompilationAlbum();
+
     }
 
+    public static void testTracksInCompilationAlbum() {
+        final int size = 2;
+        CompilationAlbum compilationAlbum = generateCompilationAlbum();
+        Album album = new Album("Album 1");
+        Artist artist = ArtistTest.generatAnArtist();
+        album.setArtist(artist);
+
+        for (int i = 0; i < size; i++) {
+            MusicTrack track = TracksTest.generateAMusicTrack(artist);
+            album.addTrack(track);
+            compilationAlbum.addTrack(track);
+        }
+
+        System.out.println("The originalAlbums includes: " + compilationAlbum.getOriginalAlbums().size());
+        compilationAlbum.removeTrack(compilationAlbum.getTracks().get(0));
+        System.out.println("The originalAlbums includes: " + compilationAlbum.getOriginalAlbums().size());
+        compilationAlbum.removeTrack(compilationAlbum.getTracks().get(0));
+        System.out.println("The originalAlbums includes: " + compilationAlbum.getOriginalAlbums().size());
+    }
 
     public static void testAddDifferentTracks() {
         final int size = 10;

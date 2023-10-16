@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 import org.example.*;
+
+import javax.sound.midi.Track;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -42,6 +44,23 @@ public class LibraryTest {
         // Test backing up
         testBackUpBinPacking();
         saveToStringToFile("backupStrategy.txt", testBackUpBinPacking());
+
+        // Test removing a track in lib.
+        MusicLibrary library1 = new MusicLibrary("lib1");
+        MusicTrack track = new MusicTrack("track 1");
+        Album album = new Album("album1");
+        album.addTrack(track);
+
+        CompilationAlbum compilationAlbum = new CompilationAlbum("compilationAlbum");
+        compilationAlbum.addTrack(track);
+
+        library1.addAlbum(album);
+        library1.addAlbum(compilationAlbum);
+
+        library1.removeAlbum(album);
+        System.out.println(library1.getAllTracks().size());
+        library1.removeTrack(track);
+        System.out.println(library1.getAllTracks().size());
     }
 
     public static void saveToStringToFile(String filename, String data) {
@@ -80,13 +99,12 @@ public class LibraryTest {
         List<Disc> discs = lib.backUpTracksOnDisc(10000 + 500);
         System.out.println(discs);
 
-        List<MusicTrack> tracksArrayList = new ArrayList<>(lib.getAllTracks().values());
+        List<MusicTrack> tracksArrayList = new ArrayList<>(lib.getAllTracks());
 
         tracksArrayList.sort((s1,s2) -> Integer.compare(s2.getFileSizeInBytes(), s1.getFileSizeInBytes()));
         return "The size of track in descending: " +
                 (tracksArrayList.stream().map(v -> v.getFileSizeInBytes()).collect(Collectors.toList()))
                 + "\n You need " + discs.size() + "discs"
                 + "\n" + String.valueOf(discs);
-
     }
 }

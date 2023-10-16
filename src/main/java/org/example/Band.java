@@ -6,6 +6,9 @@ import java.util.ArrayList;
  * Extend the Artist class with extra functionality such as handling with band member.
  */
 public class Band extends Artist {
+    /**
+     * All members in the band.
+     */
     private ArrayList<Artist> members;
 
     /**

@@ -6,20 +6,64 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- *
+ * Represent a track including a series of information about it.
+ * Implement of Identifier with a function generating a unique identifier.
  */
 public class MusicTrack implements Identifier {
+    /**
+     * The unique identifier of the track
+     */
     private String trackId;
+
+    /**
+     * The title of track
+     * Alias: the name of track
+     */
     private String title;
+
+    /**
+     * The artist of the track.
+     */
     private Artist artist;
+
+    /**
+     * The date of track issuing
+     */
     private Date date;
+
+    /**
+     * The play time of the track.
+     */
     private int lengthInSeconds;
+
+    /**
+     * The rating of the track.
+     */
     private int rating;
+
+    /**
+     * The saving path of the track.
+     */
     private String savingPath;
+
+    /**
+     * The size of the track
+     */
     private int fileSizeInBytes;
+
+    /**
+     * The other artists to be invited to create the track.
+     */
     private List<Artist> guestArtists;
+
+    /**
+     * The play times of the track.
+     */
     private int playCount;
 
+    /**
+     * Saving data about the album from which the track originates.
+     */
     private Album originalAlbum;
 
     /**
@@ -282,5 +326,15 @@ public class MusicTrack implements Identifier {
         String timestamp = Long.toString(System.currentTimeMillis());
         String randomUUID = UUID.randomUUID().toString();
         return "track-" + timestamp + "-" + randomUUID;
+    }
+
+    /**
+     * Judge if there is original album for the track
+     * By judge if the name is equal to "unknown"
+     *
+     * @return True if the name is equal to "unknown", return, otherwise return false.
+     */
+    public boolean isExistOriginalAlbum() {
+        return this.originalAlbum.getName().equals("unknown");
     }
 }

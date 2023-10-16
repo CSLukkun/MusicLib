@@ -7,7 +7,16 @@ import java.util.*;
  * Extend the Album class with specific and additional function.
  */
 public class CompilationAlbum extends Album {
+    /**
+     * A map holding a collection of music albums, where the key represent the unique
+     * identifier or name of the album, and the values is the music album object itself.
+     */
     private HashMap<String,Album> originalAlbums;
+
+    /**
+     * A map holding a collection of artists, where the key represent the unique identifier or name
+     * of the album, and the values is the music album object itself.
+     */
     private HashMap<String,Artist> artists;
 
     /**
@@ -49,9 +58,30 @@ public class CompilationAlbum extends Album {
      */
     @Override
     public void removeTrack(MusicTrack track) {
+
+        int originalReferring = 0;
+        for(int i = 0; i < tracks.size(); i++) {
+            if (Objects.equals(track.getOriginalAlbum().getAlbumId(), tracks.get(i).getOriginalAlbum().getAlbumId())) {
+                originalReferring++;
+            }
+        }
+        if (originalReferring <= 1) {
+            originalAlbums.remove(track.getOriginalAlbum().getAlbumId());
+        }
+
+        int artistReferring = 0;
+        List<Artist> artistsArray = new ArrayList<>(artists.values());
+        for(int i = 0; i < artistsArray.size(); i++) {
+            if (Objects.equals(track.getArtist().getArtistId(), artistsArray.get(i).getArtistId())) {
+                artistReferring++;
+            }
+        }
+
+        if (artistReferring <= 1) {
+            artists.remove(track.getArtist().getArtistId());
+        }
+
         tracks.remove(track);
-        originalAlbums.remove(track.getTrackId());
-        artists.remove(track.getArtist().artistId);
     }
 
     /**

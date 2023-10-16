@@ -8,7 +8,14 @@ import java.util.UUID;
  * @author Kun Lu
  */
 public class Artist implements Identifier {
+    /**
+     * The unique identifier of the artist.
+     */
     protected String artistId;
+
+    /**
+     * The name of the artist.
+     */
     protected String name;
 
     /**

@@ -10,9 +10,26 @@ import java.util.UUID;
  * Each library is identified by a unique id, a name, and has storage for tracks and albums
  */
 public class MusicLibrary implements Identifier {
+    /**
+     * The unique identifier in string formatted
+     */
     private final String libId;
+
+    /**
+     * The name of the lib
+     */
     private String name;
+
+    /**
+     * A map holding a collection of music tracks, where the key represents
+     * the unique identifier or name of the track, and the value is the MusicTrack object itself.
+     */
     private HashMap<String,MusicTrack> tracks;
+
+    /**
+     * A map holding a collection of music albums, where the key represents
+     * the unique identifier or name of the track, and the value is the music album object itself.
+     */
     private HashMap<String,Album> albums;
 
     /**
@@ -34,6 +51,7 @@ public class MusicLibrary implements Identifier {
      */
     public void addTrack(MusicTrack track) {
         tracks.put(track.getTrackId(), track);
+        albums.put(track.getOriginalAlbum().getAlbumId(), track.getOriginalAlbum());
     }
 
     /**
@@ -42,6 +60,16 @@ public class MusicLibrary implements Identifier {
      * @param track The track to be removed.
      */
     public void removeTrack(MusicTrack track) {
+        List<Album> albumList = new ArrayList<>(albums.values());
+        for (Album album: albumList) {
+            List<MusicTrack> toRemove = new ArrayList<>(album.getTracks());
+            for (MusicTrack trackInCurrentAlbum : toRemove) {
+                if (trackInCurrentAlbum.getTrackId().equals(track.getTrackId())) {
+                    album.removeTrack(track);
+                }
+            }
+        }
+
         tracks.remove(track.getTrackId());
     }
 
@@ -63,8 +91,7 @@ public class MusicLibrary implements Identifier {
      * @param album The album to be added.
      */
     public void removeAlbum(Album album) {
-        albums.put(album.getAlbumId(), album);
-        album.getTracks().forEach(track -> this.removeTrack(track));
+        albums.remove(album.getAlbumId());
     }
 
 
@@ -94,12 +121,22 @@ public class MusicLibrary implements Identifier {
         return lowestRatedTracks;
     }
 
-    public HashMap<String,MusicTrack> getAllTracks() {
-        return tracks;
+    /**
+     * Gets all tracks in the library.
+     *
+     * @return A list of all tracks
+     */
+    public List<MusicTrack> getAllTracks() {
+        return new ArrayList<>(tracks.values());
     }
 
-    public HashMap<String, Album> getAllAlbums() {
-        return albums;
+    /**
+     * Get all albums in the library.
+     *
+     * @return A list of all library.
+     */
+    public List<Album> getAllAlbums() {
+        return new ArrayList<>(albums.values());
     }
 
 

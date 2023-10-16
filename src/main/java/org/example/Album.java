@@ -10,10 +10,29 @@ import java.util.UUID;
  * @author Kun Lu
  */
 public class Album implements Identifier {
+    /**
+     * The unique identifier of an album.
+     */
     protected String albumId;
+
+    /**
+     * The name of the album.
+     */
     protected String name;
+
+    /**
+     * The type of the album.
+     */
     protected AlbumType type;
+
+    /**
+     * The list of artist who creating the album
+     */
     private Artist artist;
+
+    /**
+     * The list of tracks on the album.
+     */
     protected ArrayList<MusicTrack> tracks;
 
     /**
@@ -29,6 +48,24 @@ public class Album implements Identifier {
         this.name = name;
         this.type = AlbumType.COMMON_ALBUM;
         this.tracks = new ArrayList<>();
+    }
+
+    /**
+     * Sets the name of the album.
+     *
+     * @param name the name of the album.
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Gets the name of the album.
+     *
+     * @return the name of the album.
+     */
+    public String getName() {
+        return this.name;
     }
 
     /**

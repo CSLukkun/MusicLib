@@ -2,7 +2,7 @@ package org.example;
 
 /**
  * Represent a soloist.
- * Extends the artist class.
+ * inherit the artist class.
  */
 public class Soloist extends Artist {
     /**

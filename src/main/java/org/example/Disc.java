@@ -7,8 +7,19 @@ import java.util.List;
  * Represent a disc with its fixed capacity.
  */
 public class Disc {
+    /**
+     * The size of the disc holding
+     */
     private int capacity;
+
+    /**
+     * The size of the disc has used
+     */
     private int usedSpace = 0;
+
+    /**
+     * The tracks in the disc.
+     */
     private List<MusicTrack> tracksOnDisc = new ArrayList<>();
 
     /**
