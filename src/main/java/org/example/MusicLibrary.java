@@ -10,8 +10,7 @@ import java.util.UUID;
  * Each library is identified by a unique id, a name, and has storage for tracks and albums
  */
 public class MusicLibrary implements Identifier {
-    private String libId;
-
+    private final String libId;
     private String name;
     private HashMap<String,MusicTrack> tracks;
     private HashMap<String,Album> albums;
@@ -127,10 +126,21 @@ public class MusicLibrary implements Identifier {
         return "Library: " + name + "\n" + "Tracks: " + "\n" + tracks + "\n" + "Albums: " + "\n" + albums;
     }
 
+    /**
+     * Back up a series of tracks in the library into a small numbers of disc.
+     * Assume First-Fit Descending.
+     * Sort all tracks in descending order.
+     * When an item arrives, find the first disc into which the track can fit, if any
+     *      - If such a disc can be found, the new item is placed inside it.
+     *      - Otherwise, creating a new disc and putting the track inside it.
+     *
+     * @param discCapacity The capacity of each disc.
+     * @return A list of disc
+     */
     public List<Disc> backUpTracksOnDisc(int discCapacity) {
         List<MusicTrack> tracksArrayList = new ArrayList<>(tracks.values());
 
-        // 1. Sort the tracks in decreasing order of size
+        // 1. Sort the tracks in descending order of size
         tracksArrayList.sort((t1, t2) -> Integer.compare(t2.getFileSizeInBytes(), t1.getFileSizeInBytes()));
 
         List<Disc> discs = new ArrayList<>();
