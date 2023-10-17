@@ -26,7 +26,7 @@ public class AlbumTest {
        lastAlbum.setArtist(artist);
 
        // Construct a new track named "tack1".
-       MusicTrack track = new MusicTrack("track 1");
+       MusicTrack track = new MusicTrack("Track 1");
 
        // Assign the artist for the track.
        track.setArtist(artist);
@@ -68,6 +68,28 @@ public class AlbumTest {
 
        // Print total size of all tracks.
        System.out.println("The total size of track in the last album is " + lastAlbum.getTotalFileSize() + "byte" );
+
+       // Print all tracks on the album
+        System.out.println("All tracks on the album is :" +
+                        java.util.Arrays.toString(
+                                lastAlbum.getTracks().stream().map(MusicTrack::getTitle).toArray(String[]::new))
+                        );
+
+        // Sort tracks by their name in ascending order
+        lastAlbum.sortTracksByNameAscending();
+
+        System.out.println("All tracks on the album is :" +
+                java.util.Arrays.toString(
+                        lastAlbum.getTracks().stream().map(MusicTrack::getTitle).toArray(String[]::new))
+        );
+
+        // Sort tracks by their name in descending order
+        lastAlbum.sortTracksByNameDescending();
+
+        System.out.println("All tracks on the album is :" +
+                java.util.Arrays.toString(
+                        lastAlbum.getTracks().stream().map(MusicTrack::getTitle).toArray(String[]::new))
+        );
     }
 
     public static ArrayList<Album> generateAlbumFromJson() {

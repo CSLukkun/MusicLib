@@ -1,5 +1,7 @@
 package org.example;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.UUID;
 
 
@@ -193,5 +195,31 @@ public class Album implements Identifier {
      */
     public ArrayList<MusicTrack> getTracks() {
         return tracks;
+    }
+
+    /**
+     * Sort tracks by the name of tracks.
+     *
+     */
+    public void sortTracksByNameAscending() {
+        Collections.sort(tracks, new Comparator<MusicTrack>() {
+            @Override
+            public int compare(MusicTrack o1, MusicTrack o2) {
+                return o1.getTitle().compareTo(o2.getTitle());
+            }
+        });
+    }
+
+    /**
+     * Sort tracks by the name of tracks in descending order.
+     *
+     */
+    public void sortTracksByNameDescending() {
+        Collections.sort(tracks, new Comparator<MusicTrack>() {
+            @Override
+            public int compare(MusicTrack o1, MusicTrack o2) {
+                return o2.getTitle().compareTo(o1.getTitle());
+            }
+        });
     }
 }
