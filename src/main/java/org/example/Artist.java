@@ -2,7 +2,7 @@ package org.example;
 import java.util.UUID;
 
 /**
- * Represents an artist who is a soloist, in a band, or neither.
+ * Represents an artist who is a soloist, in a band, or neither with attributes correspondingly
  * Implement the interface Identifier with a function generating a unique identifier.
  *
  * @author Kun Lu
@@ -59,6 +59,7 @@ public class Artist implements Identifier {
 
     /**
      * Return a unique artistId to identify the artist.
+     * By combining a timestamp, a randomUUID, and artist tag, generate unique Id
      *
      * @return A formatted and random string representing the id of the id.
      */

@@ -212,7 +212,8 @@ public class Album implements Identifier {
 
     /**
      * Sort tracks by the name of tracks in descending order.
-     *
+     * By Collection.sort(), re-sort the tracks.
+     * It needs to new a comparator and override the compare method by comparing their title in descending order.
      */
     public void sortTracksByNameDescending() {
         Collections.sort(tracks, new Comparator<MusicTrack>() {

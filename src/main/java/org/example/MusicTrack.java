@@ -305,17 +305,6 @@ public class MusicTrack implements Identifier {
 
 
     /**
-     * Compare the track with other track based on their titles.
-     *
-     * @param o The track to compare with
-     * @return A negative integer, zero, or a positive integer as this title is less than, equal to, or greater than the
-     * specified title.
-     */
-    public int compareTo(MusicTrack o) {
-        return this.title.compareTo(o.title);
-    }
-
-    /**
      * Generate a trackId for a track using a combination of current timestamp and a random uuid.
      * The format of the unique ID is: "track-{currentTimestamp}-{randomUUID}"
      *
